@@ -8,7 +8,7 @@ import dataloader
 
 raw_data = dataloader.load_citeulike()
 dim_embed = 50
-total_iter = int(1e5)
+total_iter = 10000
 batch_size = 1000
 eval_iter = 10000
 save_iter = eval_iter
