@@ -1,0 +1,2102 @@
+xuan@DESKTOP-M4NJJPE:/mnt/c/Users/spiri/Documents/ubuntu/metarec$ python meta_decoder.py
+cpu
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1737, 0.1701, 0.1736, 0.1563, 0.1717, 0.1546]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1737, 0.1701, 0.1736, 0.1563, 0.1717, 0.1546]], grad_fn=<SoftmaxBackward>), tensor([[0.1936, 0.1811, 0.1879, 0.2216, 0.2159]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1737, 0.1701, 0.1736, 0.1563, 0.1717, 0.1546]], grad_fn=<SoftmaxBackward>), tensor([[0.1936, 0.1811, 0.1879, 0.2216, 0.2159]], grad_fn=<SoftmaxBackward>), tensor([[0.3264, 0.3505, 0.3231]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1737, 0.1701, 0.1736, 0.1563, 0.1717, 0.1546]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1936, 0.1811, 0.1879, 0.2216, 0.2159]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3264, 0.3505, 0.3231]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_3_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 01:08:12.836277: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.934267816679
+('loss:', tensor(4.0229, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1623, 0.1681, 0.1688, 0.1674, 0.1775, 0.1560]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1623, 0.1681, 0.1688, 0.1674, 0.1775, 0.1560]], grad_fn=<SoftmaxBackward>), tensor([[0.1911, 0.1958, 0.1997, 0.2221, 0.1912]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1623, 0.1681, 0.1688, 0.1674, 0.1775, 0.1560]], grad_fn=<SoftmaxBackward>), tensor([[0.1911, 0.1958, 0.1997, 0.2221, 0.1912]], grad_fn=<SoftmaxBackward>), tensor([[0.3311, 0.3288, 0.3401]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1623, 0.1681, 0.1688, 0.1674, 0.1775, 0.1560]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1911, 0.1958, 0.1997, 0.2221, 0.1912]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3311, 0.3288, 0.3401]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2771, 0.2212, 0.2246, 0.2771]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1516, 0.1677, 0.1761, 0.1456, 0.1880, 0.1711]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1562, 0.1604, 0.1846, 0.1650, 0.1716, 0.1621]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+4_3_2_3_4_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 01:10:31.935673: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.9047217795
+('loss:', tensor(8.1031, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1615, 0.1561, 0.1832, 0.1658, 0.1746, 0.1589]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1615, 0.1561, 0.1832, 0.1658, 0.1746, 0.1589]], grad_fn=<SoftmaxBackward>), tensor([[0.2132, 0.2062, 0.1922, 0.1607, 0.2276]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1615, 0.1561, 0.1832, 0.1658, 0.1746, 0.1589]], grad_fn=<SoftmaxBackward>), tensor([[0.2132, 0.2062, 0.1922, 0.1607, 0.2276]], grad_fn=<SoftmaxBackward>), tensor([[0.3744, 0.3608, 0.2648]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1615, 0.1561, 0.1832, 0.1658, 0.1746, 0.1589]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2132, 0.2062, 0.1922, 0.1607, 0.2276]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3744, 0.3608, 0.2648]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2909, 0.2400, 0.2518, 0.2172]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_4_0_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 01:22:38.979172: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.894900583047
+('loss:', tensor(4.8275, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1644, 0.1576, 0.1652, 0.1860, 0.1605, 0.1663]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1644, 0.1576, 0.1652, 0.1860, 0.1605, 0.1663]], grad_fn=<SoftmaxBackward>), tensor([[0.1679, 0.2499, 0.2003, 0.2167, 0.1653]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1644, 0.1576, 0.1652, 0.1860, 0.1605, 0.1663]], grad_fn=<SoftmaxBackward>), tensor([[0.1679, 0.2499, 0.2003, 0.2167, 0.1653]], grad_fn=<SoftmaxBackward>), tensor([[0.2887, 0.3471, 0.3642]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1644, 0.1576, 0.1652, 0.1860, 0.1605, 0.1663]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1679, 0.2499, 0.2003, 0.2167, 0.1653]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2887, 0.3471, 0.3642]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2715, 0.3649, 0.1070, 0.2567]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2402, 0.1292, 0.1648, 0.1758, 0.1542, 0.1358]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1371, 0.1021, 0.1822, 0.2949, 0.1594, 0.1243]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_1_2_1_0_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 01:29:38.807244: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.912277314478
+('loss:', tensor(7.0560, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1724, 0.1718, 0.1668, 0.1482, 0.1763, 0.1645]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1724, 0.1718, 0.1668, 0.1482, 0.1763, 0.1645]], grad_fn=<SoftmaxBackward>), tensor([[0.1899, 0.2801, 0.2457, 0.0992, 0.1851]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1724, 0.1718, 0.1668, 0.1482, 0.1763, 0.1645]], grad_fn=<SoftmaxBackward>), tensor([[0.1899, 0.2801, 0.2457, 0.0992, 0.1851]], grad_fn=<SoftmaxBackward>), tensor([[0.2055, 0.2883, 0.5062]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1724, 0.1718, 0.1668, 0.1482, 0.1763, 0.1645]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1899, 0.2801, 0.2457, 0.0992, 0.1851]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2055, 0.2883, 0.5062]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4132, 0.1245, 0.1900, 0.2724]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1003, 0.0444, 0.5198, 0.0787, 0.0737, 0.1830]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1143, 0.3153, 0.2384, 0.0764, 0.0275, 0.2280]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+4_1_2_0_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 01:39:11.760526: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.629142904334
+('loss:', tensor(4.0146, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1568, 0.1403, 0.1889, 0.1990, 0.1441, 0.1709]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1568, 0.1403, 0.1889, 0.1990, 0.1441, 0.1709]], grad_fn=<SoftmaxBackward>), tensor([[0.1737, 0.1888, 0.2494, 0.2213, 0.1668]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1568, 0.1403, 0.1889, 0.1990, 0.1441, 0.1709]], grad_fn=<SoftmaxBackward>), tensor([[0.1737, 0.1888, 0.2494, 0.2213, 0.1668]], grad_fn=<SoftmaxBackward>), tensor([[0.3137, 0.5568, 0.1295]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1568, 0.1403, 0.1889, 0.1990, 0.1441, 0.1709]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1737, 0.1888, 0.2494, 0.2213, 0.1668]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3137, 0.5568, 0.1295]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 01:50:28.642813: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.942244475176
+('loss:', tensor(3.3811, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1342, 0.1840, 0.1655, 0.1694, 0.1562, 0.1908]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1342, 0.1840, 0.1655, 0.1694, 0.1562, 0.1908]], grad_fn=<SoftmaxBackward>), tensor([[0.1178, 0.1656, 0.3739, 0.2661, 0.0767]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1342, 0.1840, 0.1655, 0.1694, 0.1562, 0.1908]], grad_fn=<SoftmaxBackward>), tensor([[0.1178, 0.1656, 0.3739, 0.2661, 0.0767]], grad_fn=<SoftmaxBackward>), tensor([[0.4145, 0.4551, 0.1303]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1342, 0.1840, 0.1655, 0.1694, 0.1562, 0.1908]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1178, 0.1656, 0.3739, 0.2661, 0.0767]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4145, 0.4551, 0.1303]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 01:59:53.459769: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.943732804288
+('loss:', tensor(3.2349, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1906, 0.1724, 0.1435, 0.1522, 0.1449, 0.1965]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1906, 0.1724, 0.1435, 0.1522, 0.1449, 0.1965]], grad_fn=<SoftmaxBackward>), tensor([[0.1791, 0.3027, 0.1923, 0.1193, 0.2066]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1906, 0.1724, 0.1435, 0.1522, 0.1449, 0.1965]], grad_fn=<SoftmaxBackward>), tensor([[0.1791, 0.3027, 0.1923, 0.1193, 0.2066]], grad_fn=<SoftmaxBackward>), tensor([[0.4992, 0.3196, 0.1811]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1906, 0.1724, 0.1435, 0.1522, 0.1449, 0.1965]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1791, 0.3027, 0.1923, 0.1193, 0.2066]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4992, 0.3196, 0.1811]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0240, 0.2155, 0.1091, 0.6514]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_1_0_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 02:12:50.119513: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.911635008763
+('loss:', tensor(3.5967, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1416, 0.1759, 0.1453, 0.1435, 0.1857, 0.2080]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1416, 0.1759, 0.1453, 0.1435, 0.1857, 0.2080]], grad_fn=<SoftmaxBackward>), tensor([[0.0643, 0.1937, 0.1644, 0.0383, 0.5392]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1416, 0.1759, 0.1453, 0.1435, 0.1857, 0.2080]], grad_fn=<SoftmaxBackward>), tensor([[0.0643, 0.1937, 0.1644, 0.0383, 0.5392]], grad_fn=<SoftmaxBackward>), tensor([[0.3836, 0.3646, 0.2518]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1416, 0.1759, 0.1453, 0.1435, 0.1857, 0.2080]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0643, 0.1937, 0.1644, 0.0383, 0.5392]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3836, 0.3646, 0.2518]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0712, 0.2495, 0.5260, 0.1532]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_4_0_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 02:25:41.680755: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.911432976479
+('loss:', tensor(3.4528, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1759, 0.2027, 0.1584, 0.1451, 0.1553, 0.1626]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1759, 0.2027, 0.1584, 0.1451, 0.1553, 0.1626]], grad_fn=<SoftmaxBackward>), tensor([[0.5581, 0.1717, 0.1392, 0.0784, 0.0528]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1759, 0.2027, 0.1584, 0.1451, 0.1553, 0.1626]], grad_fn=<SoftmaxBackward>), tensor([[0.5581, 0.1717, 0.1392, 0.0784, 0.0528]], grad_fn=<SoftmaxBackward>), tensor([[0.2430, 0.0884, 0.6686]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1759, 0.2027, 0.1584, 0.1451, 0.1553, 0.1626]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5581, 0.1717, 0.1392, 0.0784, 0.0528]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2430, 0.0884, 0.6686]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1831, 0.5817, 0.2295, 0.0057]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.7467, 0.0866, 0.0532, 0.0067, 0.0537, 0.0532]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0834, 0.0691, 0.2566, 0.0183, 0.2052, 0.3674]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_0_2_1_0_5
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 02:38:39.504261: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.906467413781
+('loss:', tensor(4.0038, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1658, 0.1730, 0.1792, 0.1602, 0.1472, 0.1746]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1658, 0.1730, 0.1792, 0.1602, 0.1472, 0.1746]], grad_fn=<SoftmaxBackward>), tensor([[0.1273, 0.3349, 0.0361, 0.3932, 0.1085]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1658, 0.1730, 0.1792, 0.1602, 0.1472, 0.1746]], grad_fn=<SoftmaxBackward>), tensor([[0.1273, 0.3349, 0.0361, 0.3932, 0.1085]], grad_fn=<SoftmaxBackward>), tensor([[0.5508, 0.3586, 0.0906]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1658, 0.1730, 0.1792, 0.1602, 0.1472, 0.1746]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1273, 0.3349, 0.0361, 0.3932, 0.1085]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5508, 0.3586, 0.0906]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3291, 0.5169, 0.1167, 0.0373]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_3_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 02:43:31.914248: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.910389825668
+('loss:', tensor(3.5588, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1494, 0.1525, 0.2043, 0.1890, 0.1747, 0.1301]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1494, 0.1525, 0.2043, 0.1890, 0.1747, 0.1301]], grad_fn=<SoftmaxBackward>), tensor([[0.2588, 0.0865, 0.3824, 0.2325, 0.0397]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1494, 0.1525, 0.2043, 0.1890, 0.1747, 0.1301]], grad_fn=<SoftmaxBackward>), tensor([[0.2588, 0.0865, 0.3824, 0.2325, 0.0397]], grad_fn=<SoftmaxBackward>), tensor([[0.1351, 0.0029, 0.8620]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1494, 0.1525, 0.2043, 0.1890, 0.1747, 0.1301]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2588, 0.0865, 0.3824, 0.2325, 0.0397]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1351, 0.0029, 0.8620]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0294, 0.0264, 0.8856, 0.0587]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0062, 0.0075, 0.1479, 0.5679, 0.0840, 0.1864]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0191, 0.0101, 0.0589, 0.3445, 0.5339, 0.0334]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_2_2_2_3_4
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 02:50:17.396373: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.901788157594
+('loss:', tensor(3.6188, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1497, 0.1301, 0.1571, 0.1980, 0.2359, 0.1292]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1497, 0.1301, 0.1571, 0.1980, 0.2359, 0.1292]], grad_fn=<SoftmaxBackward>), tensor([[0.2418, 0.0483, 0.0271, 0.5917, 0.0911]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1497, 0.1301, 0.1571, 0.1980, 0.2359, 0.1292]], grad_fn=<SoftmaxBackward>), tensor([[0.2418, 0.0483, 0.0271, 0.5917, 0.0911]], grad_fn=<SoftmaxBackward>), tensor([[0.0004, 0.9485, 0.0511]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1497, 0.1301, 0.1571, 0.1980, 0.2359, 0.1292]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2418, 0.0483, 0.0271, 0.5917, 0.0911]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0004, 0.9485, 0.0511]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+4_3_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 02:57:59.377387: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.942893284087
+('loss:', tensor(1.9065, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1880, 0.1532, 0.1911, 0.1250, 0.1839, 0.1588]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1880, 0.1532, 0.1911, 0.1250, 0.1839, 0.1588]], grad_fn=<SoftmaxBackward>), tensor([[0.0119, 0.3244, 0.2219, 0.1670, 0.2748]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1880, 0.1532, 0.1911, 0.1250, 0.1839, 0.1588]], grad_fn=<SoftmaxBackward>), tensor([[0.0119, 0.3244, 0.2219, 0.1670, 0.2748]], grad_fn=<SoftmaxBackward>), tensor([[0.8182, 0.0966, 0.0852]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1880, 0.1532, 0.1911, 0.1250, 0.1839, 0.1588]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0119, 0.3244, 0.2219, 0.1670, 0.2748]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.8182, 0.0966, 0.0852]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2019, 0.1276, 0.6338, 0.0368]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_1_0_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 03:08:59.636229: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.915529204229
+('loss:', tensor(3.1471, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1807, 0.1793, 0.1602, 0.1663, 0.1241, 0.1893]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1807, 0.1793, 0.1602, 0.1663, 0.1241, 0.1893]], grad_fn=<SoftmaxBackward>), tensor([[0.0370, 0.1444, 0.4071, 0.2063, 0.2051]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1807, 0.1793, 0.1602, 0.1663, 0.1241, 0.1893]], grad_fn=<SoftmaxBackward>), tensor([[0.0370, 0.1444, 0.4071, 0.2063, 0.2051]], grad_fn=<SoftmaxBackward>), tensor([[0.0743, 0.4911, 0.4347]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1807, 0.1793, 0.1602, 0.1663, 0.1241, 0.1893]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0370, 0.1444, 0.4071, 0.2063, 0.2051]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0743, 0.4911, 0.4347]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 03:15:48.369397: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.944077350493
+('loss:', tensor(3.0909, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1589, 0.1949, 0.2442, 0.1737, 0.1094, 0.1190]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1589, 0.1949, 0.2442, 0.1737, 0.1094, 0.1190]], grad_fn=<SoftmaxBackward>), tensor([[0.0006, 0.3188, 0.6251, 0.0410, 0.0145]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1589, 0.1949, 0.2442, 0.1737, 0.1094, 0.1190]], grad_fn=<SoftmaxBackward>), tensor([[0.0006, 0.3188, 0.6251, 0.0410, 0.0145]], grad_fn=<SoftmaxBackward>), tensor([[0.0997, 0.0441, 0.8562]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1589, 0.1949, 0.2442, 0.1737, 0.1094, 0.1190]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0006, 0.3188, 0.6251, 0.0410, 0.0145]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0997, 0.0441, 0.8562]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0629, 0.0171, 0.9036, 0.0164]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0759, 0.0051, 0.0423, 0.8743, 0.0001, 0.0022]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0187, 0.0054, 0.0058, 0.9363, 0.0269, 0.0069]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_2_2_2_3_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 03:28:43.038161: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.900018582619
+('loss:', tensor(2.1029, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1627, 0.1781, 0.1777, 0.1432, 0.1754, 0.1629]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1627, 0.1781, 0.1777, 0.1432, 0.1754, 0.1629]], grad_fn=<SoftmaxBackward>), tensor([[0.1052, 0.7677, 0.0016, 0.0083, 0.1172]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1627, 0.1781, 0.1777, 0.1432, 0.1754, 0.1629]], grad_fn=<SoftmaxBackward>), tensor([[0.1052, 0.7677, 0.0016, 0.0083, 0.1172]], grad_fn=<SoftmaxBackward>), tensor([[0.1322, 0.8662, 0.0016]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1627, 0.1781, 0.1777, 0.1432, 0.1754, 0.1629]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1052, 0.7677, 0.0016, 0.0083, 0.1172]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1322, 0.8662, 0.0016]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_1_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 03:36:22.444975: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.942785561391
+('loss:', tensor(2.0115, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1601, 0.0791, 0.2654, 0.1955, 0.1751, 0.1249]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1601, 0.0791, 0.2654, 0.1955, 0.1751, 0.1249]], grad_fn=<SoftmaxBackward>), tensor([[0.9746, 0.0103, 0.0140, 0.0002, 0.0010]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1601, 0.0791, 0.2654, 0.1955, 0.1751, 0.1249]], grad_fn=<SoftmaxBackward>), tensor([[0.9746, 0.0103, 0.0140, 0.0002, 0.0010]], grad_fn=<SoftmaxBackward>), tensor([[0.0044, 0.0019, 0.9937]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1601, 0.0791, 0.2654, 0.1955, 0.1751, 0.1249]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9746, 0.0103, 0.0140, 0.0002, 0.0010]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0044, 0.0019, 0.9937]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3284, 0.1753, 0.0541, 0.4422]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0010, 0.0745, 0.5459, 0.0452, 0.0008, 0.3326]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0203, 0.1222, 0.0125, 0.1932, 0.6160, 0.0357]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_0_2_3_2_4
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 03:41:08.575312: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.910815666159
+('loss:', tensor(2.9731, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1891, 0.1396, 0.1376, 0.2370, 0.1812, 0.1155]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1891, 0.1396, 0.1376, 0.2370, 0.1812, 0.1155]], grad_fn=<SoftmaxBackward>), tensor([[0.8195, 0.0383, 0.0013, 0.0405, 0.1004]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1891, 0.1396, 0.1376, 0.2370, 0.1812, 0.1155]], grad_fn=<SoftmaxBackward>), tensor([[0.8195, 0.0383, 0.0013, 0.0405, 0.1004]], grad_fn=<SoftmaxBackward>), tensor([[0.8420, 0.1578, 0.0003]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1891, 0.1396, 0.1376, 0.2370, 0.1812, 0.1155]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.8195, 0.0383, 0.0013, 0.0405, 0.1004]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.8420, 0.1578, 0.0003]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0202, 0.0086, 0.1062, 0.8649]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_0_0_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 03:48:55.479485: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.930448590779
+('loss:', tensor(1.8196, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2325, 0.1200, 0.1467, 0.1700, 0.1109, 0.2200]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2325, 0.1200, 0.1467, 0.1700, 0.1109, 0.2200]], grad_fn=<SoftmaxBackward>), tensor([[0.5794, 0.3985, 0.0019, 0.0089, 0.0112]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2325, 0.1200, 0.1467, 0.1700, 0.1109, 0.2200]], grad_fn=<SoftmaxBackward>), tensor([[0.5794, 0.3985, 0.0019, 0.0089, 0.0112]], grad_fn=<SoftmaxBackward>), tensor([[7.8019e-06, 1.3722e-01, 8.6277e-01]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.2325, 0.1200, 0.1467, 0.1700, 0.1109, 0.2200]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5794, 0.3985, 0.0019, 0.0089, 0.0112]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[7.8019e-06, 1.3722e-01, 8.6277e-01]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4832, 0.5117, 0.0050, 0.0002]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0001, 0.0015, 0.0032, 0.0001, 0.2301, 0.7650]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0011, 0.0013, 0.0003, 0.9972, 0.0000, 0.0001]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_0_2_1_5_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 03:58:08.837827: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.905791115798
+('loss:', tensor(2.8016, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2517, 0.1966, 0.1225, 0.2290, 0.1321, 0.0681]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2517, 0.1966, 0.1225, 0.2290, 0.1321, 0.0681]], grad_fn=<SoftmaxBackward>), tensor([[0.0824, 0.0030, 0.1500, 0.4565, 0.3081]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2517, 0.1966, 0.1225, 0.2290, 0.1321, 0.0681]], grad_fn=<SoftmaxBackward>), tensor([[0.0824, 0.0030, 0.1500, 0.4565, 0.3081]], grad_fn=<SoftmaxBackward>), tensor([[0.1899, 0.0255, 0.7846]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.2517, 0.1966, 0.1225, 0.2290, 0.1321, 0.0681]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0824, 0.0030, 0.1500, 0.4565, 0.3081]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1899, 0.0255, 0.7846]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5755, 0.0984, 0.3149, 0.0112]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9826, 0.0003, 0.0061, 0.0016, 0.0048, 0.0045]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0001, 0.0050, 0.0022, 0.0320, 0.9096, 0.0511]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_3_2_0_0_4
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:01:44.310412: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.631221561049
+('loss:', tensor(1.9387, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1638, 0.2437, 0.1414, 0.0629, 0.1526, 0.2355]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1638, 0.2437, 0.1414, 0.0629, 0.1526, 0.2355]], grad_fn=<SoftmaxBackward>), tensor([[0.1755, 0.0027, 0.7878, 0.0034, 0.0306]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1638, 0.2437, 0.1414, 0.0629, 0.1526, 0.2355]], grad_fn=<SoftmaxBackward>), tensor([[0.1755, 0.0027, 0.7878, 0.0034, 0.0306]], grad_fn=<SoftmaxBackward>), tensor([[0.0889, 0.3375, 0.5736]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1638, 0.2437, 0.1414, 0.0629, 0.1526, 0.2355]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1755, 0.0027, 0.7878, 0.0034, 0.0306]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0889, 0.3375, 0.5736]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.8484, 0.1501, 0.0006, 0.0009]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0003, 0.0109, 0.7134, 0.0706, 0.0955, 0.1093]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.8835, 0.0000, 0.0956, 0.0032, 0.0006, 0.0170]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_2_2_0_2_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:03:43.698300: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.630969169082
+('loss:', tensor(1.7869, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1025, 0.1272, 0.1853, 0.2969, 0.1527, 0.1354]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1025, 0.1272, 0.1853, 0.2969, 0.1527, 0.1354]], grad_fn=<SoftmaxBackward>), tensor([[0.0272, 0.8218, 0.0937, 0.0003, 0.0569]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1025, 0.1272, 0.1853, 0.2969, 0.1527, 0.1354]], grad_fn=<SoftmaxBackward>), tensor([[0.0272, 0.8218, 0.0937, 0.0003, 0.0569]], grad_fn=<SoftmaxBackward>), tensor([[0.9940, 0.0017, 0.0043]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1025, 0.1272, 0.1853, 0.2969, 0.1527, 0.1354]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0272, 0.8218, 0.0937, 0.0003, 0.0569]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9940, 0.0017, 0.0043]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2091, 0.0005, 0.0119, 0.7786]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_1_0_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:08:22.962772: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.916943716489
+('loss:', tensor(1.5285, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1746, 0.1609, 0.1023, 0.2390, 0.1578, 0.1654]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1746, 0.1609, 0.1023, 0.2390, 0.1578, 0.1654]], grad_fn=<SoftmaxBackward>), tensor([[0.0000, 0.1525, 0.8468, 0.0001, 0.0006]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1746, 0.1609, 0.1023, 0.2390, 0.1578, 0.1654]], grad_fn=<SoftmaxBackward>), tensor([[0.0000, 0.1525, 0.8468, 0.0001, 0.0006]], grad_fn=<SoftmaxBackward>), tensor([[2.0167e-03, 2.3535e-06, 9.9798e-01]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1746, 0.1609, 0.1023, 0.2390, 0.1578, 0.1654]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.1525, 0.8468, 0.0001, 0.0006]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.0167e-03, 2.3535e-06, 9.9798e-01]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0052, 0.9883, 0.0004, 0.0061]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0151, 0.0021, 0.4320, 0.0031, 0.3145, 0.2331]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[5.0557e-05, 5.3651e-06, 4.1838e-02, 1.4555e-05, 9.5807e-01, 2.3839e-05]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_2_2_1_2_4
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:17:31.338473: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.902612110793
+('loss:', tensor(2.2508, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2167, 0.2335, 0.0730, 0.2426, 0.0736, 0.1606]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2167, 0.2335, 0.0730, 0.2426, 0.0736, 0.1606]], grad_fn=<SoftmaxBackward>), tensor([[0.0000, 0.0378, 0.9603, 0.0006, 0.0012]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2167, 0.2335, 0.0730, 0.2426, 0.0736, 0.1606]], grad_fn=<SoftmaxBackward>), tensor([[0.0000, 0.0378, 0.9603, 0.0006, 0.0012]], grad_fn=<SoftmaxBackward>), tensor([[0.1119, 0.8567, 0.0314]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.2167, 0.2335, 0.0730, 0.2426, 0.0736, 0.1606]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.0378, 0.9603, 0.0006, 0.0012]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1119, 0.8567, 0.0314]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:27:17.263112: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.942001674031
+('loss:', tensor(1.5178, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1398, 0.0669, 0.2888, 0.3411, 0.0911, 0.0724]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1398, 0.0669, 0.2888, 0.3411, 0.0911, 0.0724]], grad_fn=<SoftmaxBackward>), tensor([[0.0009, 0.0015, 0.3170, 0.6805, 0.0000]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1398, 0.0669, 0.2888, 0.3411, 0.0911, 0.0724]], grad_fn=<SoftmaxBackward>), tensor([[0.0009, 0.0015, 0.3170, 0.6805, 0.0000]], grad_fn=<SoftmaxBackward>), tensor([[0.9630, 0.0190, 0.0180]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1398, 0.0669, 0.2888, 0.3411, 0.0911, 0.0724]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0009, 0.0015, 0.3170, 0.6805, 0.0000]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9630, 0.0190, 0.0180]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.9959, 0.0001, 0.0039]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_3_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:36:27.666984: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.909134995169
+('loss:', tensor(1.3659, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1544, 0.2110, 0.0953, 0.1025, 0.1062, 0.3306]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1544, 0.2110, 0.0953, 0.1025, 0.1062, 0.3306]], grad_fn=<SoftmaxBackward>), tensor([[0.0461, 0.3141, 0.0554, 0.5840, 0.0004]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1544, 0.2110, 0.0953, 0.1025, 0.1062, 0.3306]], grad_fn=<SoftmaxBackward>), tensor([[0.0461, 0.3141, 0.0554, 0.5840, 0.0004]], grad_fn=<SoftmaxBackward>), tensor([[0.0049, 0.9737, 0.0214]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1544, 0.2110, 0.0953, 0.1025, 0.1062, 0.3306]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0461, 0.3141, 0.0554, 0.5840, 0.0004]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0049, 0.9737, 0.0214]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_3_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:45:32.530357: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.942807033554
+('loss:', tensor(1.5759, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1049, 0.0834, 0.0815, 0.1914, 0.3462, 0.1926]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1049, 0.0834, 0.0815, 0.1914, 0.3462, 0.1926]], grad_fn=<SoftmaxBackward>), tensor([[0.0014, 0.2881, 0.5821, 0.1131, 0.0153]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1049, 0.0834, 0.0815, 0.1914, 0.3462, 0.1926]], grad_fn=<SoftmaxBackward>), tensor([[0.0014, 0.2881, 0.5821, 0.1131, 0.0153]], grad_fn=<SoftmaxBackward>), tensor([[0.9775, 0.0098, 0.0127]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1049, 0.0834, 0.0815, 0.1914, 0.3462, 0.1926]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0014, 0.2881, 0.5821, 0.1131, 0.0153]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9775, 0.0098, 0.0127]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5483, 0.0432, 0.2459, 0.1626]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+4_2_0_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 04:58:37.706920: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.882195633738
+('loss:', tensor(1.9633, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2096, 0.1226, 0.0468, 0.2475, 0.2215, 0.1519]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2096, 0.1226, 0.0468, 0.2475, 0.2215, 0.1519]], grad_fn=<SoftmaxBackward>), tensor([[9.6557e-01, 3.4403e-02, 4.7379e-09, 1.5660e-05, 1.0500e-05]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2096, 0.1226, 0.0468, 0.2475, 0.2215, 0.1519]], grad_fn=<SoftmaxBackward>), tensor([[9.6557e-01, 3.4403e-02, 4.7379e-09, 1.5660e-05, 1.0500e-05]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.9568, 0.0037, 0.0395]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.2096, 0.1226, 0.0468, 0.2475, 0.2215, 0.1519]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.6557e-01, 3.4403e-02, 4.7379e-09, 1.5660e-05, 1.0500e-05]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9568, 0.0037, 0.0395]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9670, 0.0204, 0.0125, 0.0000]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_0_0_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:09:37.288657: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.927313481399
+('loss:', tensor(1.3993, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2970, 0.0754, 0.2650, 0.2388, 0.0438, 0.0800]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2970, 0.0754, 0.2650, 0.2388, 0.0438, 0.0800]], grad_fn=<SoftmaxBackward>), tensor([[0.0005, 0.4461, 0.5519, 0.0000, 0.0013]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2970, 0.0754, 0.2650, 0.2388, 0.0438, 0.0800]], grad_fn=<SoftmaxBackward>), tensor([[0.0005, 0.4461, 0.5519, 0.0000, 0.0013]], grad_fn=<SoftmaxBackward>), tensor([[0.0634, 0.9126, 0.0241]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.2970, 0.0754, 0.2650, 0.2388, 0.0438, 0.0800]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0005, 0.4461, 0.5519, 0.0000, 0.0013]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0634, 0.9126, 0.0241]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:18:45.183392: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.935767699833
+('loss:', tensor(1.7778, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1479, 0.2140, 0.2052, 0.1306, 0.1565, 0.1458]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1479, 0.2140, 0.2052, 0.1306, 0.1565, 0.1458]], grad_fn=<SoftmaxBackward>), tensor([[0.2053, 0.6534, 0.1373, 0.0030, 0.0011]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1479, 0.2140, 0.2052, 0.1306, 0.1565, 0.1458]], grad_fn=<SoftmaxBackward>), tensor([[0.2053, 0.6534, 0.1373, 0.0030, 0.0011]], grad_fn=<SoftmaxBackward>), tensor([[0.5525, 0.4468, 0.0007]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.1479, 0.2140, 0.2052, 0.1306, 0.1565, 0.1458]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2053, 0.6534, 0.1373, 0.0030, 0.0011]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5525, 0.4468, 0.0007]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0196, 0.2247, 0.6286, 0.1270]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_1_0_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:21:04.224534: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.917739061798
+('loss:', tensor(2.7762, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0702, 0.3435, 0.0963, 0.0803, 0.2221, 0.1875]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0702, 0.3435, 0.0963, 0.0803, 0.2221, 0.1875]], grad_fn=<SoftmaxBackward>), tensor([[0.0599, 0.0070, 0.0001, 0.9329, 0.0002]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0702, 0.3435, 0.0963, 0.0803, 0.2221, 0.1875]], grad_fn=<SoftmaxBackward>), tensor([[0.0599, 0.0070, 0.0001, 0.9329, 0.0002]], grad_fn=<SoftmaxBackward>), tensor([[0.1624, 0.0273, 0.8103]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.0702, 0.3435, 0.0963, 0.0803, 0.2221, 0.1875]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0599, 0.0070, 0.0001, 0.9329, 0.0002]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1624, 0.0273, 0.8103]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3578, 0.0050, 0.5780, 0.0593]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[3.3176e-01, 8.2761e-06, 2.8253e-01, 2.4628e-01, 9.6243e-02, 4.3178e-02]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[1.2589e-06, 9.9789e-01, 1.2204e-03, 1.5127e-05, 8.5523e-04, 1.4008e-05]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_3_2_2_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:25:49.159480: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.911418442972
+('loss:', tensor(2.7361, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1196, 0.5405, 0.2344, 0.0434, 0.0249, 0.0373]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1196, 0.5405, 0.2344, 0.0434, 0.0249, 0.0373]], grad_fn=<SoftmaxBackward>), tensor([[0.5222, 0.0149, 0.0007, 0.0001, 0.4620]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1196, 0.5405, 0.2344, 0.0434, 0.0249, 0.0373]], grad_fn=<SoftmaxBackward>), tensor([[0.5222, 0.0149, 0.0007, 0.0001, 0.4620]], grad_fn=<SoftmaxBackward>), tensor([[0.1506, 0.1040, 0.7453]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1196, 0.5405, 0.2344, 0.0434, 0.0249, 0.0373]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5222, 0.0149, 0.0007, 0.0001, 0.4620]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1506, 0.1040, 0.7453]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0383, 0.9602, 0.0003, 0.0011]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0825, 0.7900, 0.0005, 0.0034, 0.1231, 0.0005]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.1269e-01, 5.9884e-02, 2.2686e-05, 2.3480e-04, 2.7168e-02, 2.0423e-06]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_0_2_1_1_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:30:43.814869: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.909609002172
+('loss:', tensor(1.7526, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2641, 0.3491, 0.1481, 0.1111, 0.0545, 0.0732]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2641, 0.3491, 0.1481, 0.1111, 0.0545, 0.0732]], grad_fn=<SoftmaxBackward>), tensor([[0.1886, 0.3876, 0.4161, 0.0041, 0.0036]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2641, 0.3491, 0.1481, 0.1111, 0.0545, 0.0732]], grad_fn=<SoftmaxBackward>), tensor([[0.1886, 0.3876, 0.4161, 0.0041, 0.0036]], grad_fn=<SoftmaxBackward>), tensor([[0.7248, 0.1524, 0.1227]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.2641, 0.3491, 0.1481, 0.1111, 0.0545, 0.0732]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1886, 0.3876, 0.4161, 0.0041, 0.0036]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.7248, 0.1524, 0.1227]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0247, 0.0068, 0.9558, 0.0127]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_2_0_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:35:41.293380: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.916656940698
+('loss:', tensor(2.1050, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0557, 0.1103, 0.1975, 0.1219, 0.1610, 0.3536]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0557, 0.1103, 0.1975, 0.1219, 0.1610, 0.3536]], grad_fn=<SoftmaxBackward>), tensor([[0.0108, 0.0005, 0.0505, 0.9095, 0.0286]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0557, 0.1103, 0.1975, 0.1219, 0.1610, 0.3536]], grad_fn=<SoftmaxBackward>), tensor([[0.0108, 0.0005, 0.0505, 0.9095, 0.0286]], grad_fn=<SoftmaxBackward>), tensor([[0.0007, 0.9944, 0.0049]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.0557, 0.1103, 0.1975, 0.1219, 0.1610, 0.3536]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0108, 0.0005, 0.0505, 0.9095, 0.0286]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0007, 0.9944, 0.0049]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_3_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:40:20.751910: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.942568977083
+('loss:', tensor(1.0745, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1277, 0.3035, 0.0517, 0.3279, 0.1160, 0.0731]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1277, 0.3035, 0.0517, 0.3279, 0.1160, 0.0731]], grad_fn=<SoftmaxBackward>), tensor([[0.7351, 0.2548, 0.0004, 0.0084, 0.0012]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1277, 0.3035, 0.0517, 0.3279, 0.1160, 0.0731]], grad_fn=<SoftmaxBackward>), tensor([[0.7351, 0.2548, 0.0004, 0.0084, 0.0012]], grad_fn=<SoftmaxBackward>), tensor([[0.0039, 0.9960, 0.0001]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1277, 0.3035, 0.0517, 0.3279, 0.1160, 0.0731]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.7351, 0.2548, 0.0004, 0.0084, 0.0012]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0039, 0.9960, 0.0001]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 05:53:08.899822: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.925777800217
+('loss:', tensor(1.3207, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.6593, 0.0503, 0.0380, 0.1591, 0.0711, 0.0222]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.6593, 0.0503, 0.0380, 0.1591, 0.0711, 0.0222]], grad_fn=<SoftmaxBackward>), tensor([[0.0160, 0.9299, 0.0003, 0.0178, 0.0360]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.6593, 0.0503, 0.0380, 0.1591, 0.0711, 0.0222]], grad_fn=<SoftmaxBackward>), tensor([[0.0160, 0.9299, 0.0003, 0.0178, 0.0360]], grad_fn=<SoftmaxBackward>), tensor([[0.0041, 0.8106, 0.1853]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.6593, 0.0503, 0.0380, 0.1591, 0.0711, 0.0222]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0160, 0.9299, 0.0003, 0.0178, 0.0360]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0041, 0.8106, 0.1853]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_1_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 06:02:12.317870: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.937288183135
+('loss:', tensor(0.6553, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1381, 0.1231, 0.0501, 0.2232, 0.1584, 0.3072]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1381, 0.1231, 0.0501, 0.2232, 0.1584, 0.3072]], grad_fn=<SoftmaxBackward>), tensor([[0.0556, 0.1271, 0.0367, 0.0000, 0.7805]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1381, 0.1231, 0.0501, 0.2232, 0.1584, 0.3072]], grad_fn=<SoftmaxBackward>), tensor([[0.0556, 0.1271, 0.0367, 0.0000, 0.7805]], grad_fn=<SoftmaxBackward>), tensor([[0.0030, 0.9874, 0.0096]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1381, 0.1231, 0.0501, 0.2232, 0.1584, 0.3072]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0556, 0.1271, 0.0367, 0.0000, 0.7805]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0030, 0.9874, 0.0096]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_4_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 06:04:23.821066: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.942586464871
+('loss:', tensor(1.3582, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1695, 0.2565, 0.1298, 0.1600, 0.1312, 0.1530]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1695, 0.2565, 0.1298, 0.1600, 0.1312, 0.1530]], grad_fn=<SoftmaxBackward>), tensor([[4.5643e-02, 1.7278e-01, 3.7793e-06, 1.2398e-01, 6.5759e-01]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1695, 0.2565, 0.1298, 0.1600, 0.1312, 0.1530]], grad_fn=<SoftmaxBackward>), tensor([[4.5643e-02, 1.7278e-01, 3.7793e-06, 1.2398e-01, 6.5759e-01]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0053, 0.0157, 0.9790]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1695, 0.2565, 0.1298, 0.1600, 0.1312, 0.1530]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[4.5643e-02, 1.7278e-01, 3.7793e-06, 1.2398e-01, 6.5759e-01]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0053, 0.0157, 0.9790]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.0020, 0.1584, 0.8396]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0003, 0.0003, 0.2402, 0.0003, 0.0366, 0.7224]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.6947e-01, 1.8558e-03, 1.1309e-01, 1.2123e-01, 3.8840e-08, 4.9436e-01]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_4_2_3_5_5
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 06:17:16.195638: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.900514864108
+('loss:', tensor(2.7065, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.5658, 0.0046, 0.1251, 0.0402, 0.2171, 0.0472]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.5658, 0.0046, 0.1251, 0.0402, 0.2171, 0.0472]], grad_fn=<SoftmaxBackward>), tensor([[1.0213e-05, 2.4714e-03, 9.9751e-01, 1.6055e-06, 2.3797e-06]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.5658, 0.0046, 0.1251, 0.0402, 0.2171, 0.0472]], grad_fn=<SoftmaxBackward>), tensor([[1.0213e-05, 2.4714e-03, 9.9751e-01, 1.6055e-06, 2.3797e-06]],
+       grad_fn=<SoftmaxBackward>), tensor([[8.7916e-01, 3.0919e-06, 1.2083e-01]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.5658, 0.0046, 0.1251, 0.0402, 0.2171, 0.0472]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[1.0213e-05, 2.4714e-03, 9.9751e-01, 1.6055e-06, 2.3797e-06]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[8.7916e-01, 3.0919e-06, 1.2083e-01]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[7.8821e-01, 1.7869e-06, 2.1109e-01, 6.9902e-04]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_2_0_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 06:23:26.193750: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.903807759671
+('loss:', tensor(0.8484, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2549, 0.1099, 0.0440, 0.1076, 0.1008, 0.3828]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2549, 0.1099, 0.0440, 0.1076, 0.1008, 0.3828]], grad_fn=<SoftmaxBackward>), tensor([[0.3270, 0.6680, 0.0007, 0.0028, 0.0014]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2549, 0.1099, 0.0440, 0.1076, 0.1008, 0.3828]], grad_fn=<SoftmaxBackward>), tensor([[0.3270, 0.6680, 0.0007, 0.0028, 0.0014]], grad_fn=<SoftmaxBackward>), tensor([[0.4843, 0.0034, 0.5123]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.2549, 0.1099, 0.0440, 0.1076, 0.1008, 0.3828]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3270, 0.6680, 0.0007, 0.0028, 0.0014]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4843, 0.0034, 0.5123]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1846, 0.0312, 0.7811, 0.0032]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5992, 0.1384, 0.0032, 0.1168, 0.1424, 0.0001]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1634, 0.7474, 0.0019, 0.0472, 0.0396, 0.0005]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_1_2_2_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 06:25:44.248038: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.914891195049
+('loss:', tensor(2.8207, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0571, 0.1718, 0.1371, 0.0866, 0.2141, 0.3333]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0571, 0.1718, 0.1371, 0.0866, 0.2141, 0.3333]], grad_fn=<SoftmaxBackward>), tensor([[2.3190e-02, 3.0714e-06, 3.7905e-05, 9.7669e-01, 8.2480e-05]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0571, 0.1718, 0.1371, 0.0866, 0.2141, 0.3333]], grad_fn=<SoftmaxBackward>), tensor([[2.3190e-02, 3.0714e-06, 3.7905e-05, 9.7669e-01, 8.2480e-05]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.5926, 0.4064, 0.0010]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.0571, 0.1718, 0.1371, 0.0866, 0.2141, 0.3333]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.3190e-02, 3.0714e-06, 3.7905e-05, 9.7669e-01, 8.2480e-05]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5926, 0.4064, 0.0010]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9473, 0.0198, 0.0056, 0.0273]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_3_0_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 06:38:47.941946: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.877313368378
+('loss:', tensor(1.4911, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1741, 0.0140, 0.1126, 0.3819, 0.1632, 0.1543]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1741, 0.0140, 0.1126, 0.3819, 0.1632, 0.1543]], grad_fn=<SoftmaxBackward>), tensor([[7.8585e-06, 1.7202e-02, 9.8276e-01, 1.6589e-05, 1.5320e-05]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1741, 0.0140, 0.1126, 0.3819, 0.1632, 0.1543]], grad_fn=<SoftmaxBackward>), tensor([[7.8585e-06, 1.7202e-02, 9.8276e-01, 1.6589e-05, 1.5320e-05]],
+       grad_fn=<SoftmaxBackward>), tensor([[6.6167e-03, 7.7435e-06, 9.9338e-01]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1741, 0.0140, 0.1126, 0.3819, 0.1632, 0.1543]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[7.8585e-06, 1.7202e-02, 9.8276e-01, 1.6589e-05, 1.5320e-05]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[6.6167e-03, 7.7435e-06, 9.9338e-01]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3154, 0.5842, 0.0659, 0.0345]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[3.2049e-05, 6.0622e-02, 5.9209e-01, 5.5024e-07, 3.5800e-02, 3.1145e-01]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[1.7975e-05, 8.7590e-07, 6.6449e-06, 5.5961e-01, 3.8945e-01, 5.0915e-02]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_2_2_1_2_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 06:51:55.249117: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.899044647386
+('loss:', tensor(2.3635, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3449, 0.2767, 0.2996, 0.0199, 0.0238, 0.0350]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3449, 0.2767, 0.2996, 0.0199, 0.0238, 0.0350]], grad_fn=<SoftmaxBackward>), tensor([[9.9890e-01, 3.4251e-06, 1.0499e-03, 8.0434e-08, 4.4616e-05]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3449, 0.2767, 0.2996, 0.0199, 0.0238, 0.0350]], grad_fn=<SoftmaxBackward>), tensor([[9.9890e-01, 3.4251e-06, 1.0499e-03, 8.0434e-08, 4.4616e-05]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0050, 0.0042, 0.9908]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.3449, 0.2767, 0.2996, 0.0199, 0.0238, 0.0350]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.9890e-01, 3.4251e-06, 1.0499e-03, 8.0434e-08, 4.4616e-05]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0050, 0.0042, 0.9908]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9949, 0.0001, 0.0041, 0.0009]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0001, 0.0001, 0.0000, 0.0080, 0.0034, 0.9885]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.9011e-01, 8.7139e-04, 2.6953e-06, 8.6782e-03, 1.6773e-04, 1.7486e-04]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_0_2_0_5_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:01:37.682334: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.62711642644
+('loss:', tensor(0.6907, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2020, 0.1074, 0.1145, 0.1144, 0.4523, 0.0094]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2020, 0.1074, 0.1145, 0.1144, 0.4523, 0.0094]], grad_fn=<SoftmaxBackward>), tensor([[2.9044e-05, 3.2165e-07, 9.8291e-01, 1.3889e-05, 1.7049e-02]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.2020, 0.1074, 0.1145, 0.1144, 0.4523, 0.0094]], grad_fn=<SoftmaxBackward>), tensor([[2.9044e-05, 3.2165e-07, 9.8291e-01, 1.3889e-05, 1.7049e-02]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0186, 0.9813, 0.0001]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.2020, 0.1074, 0.1145, 0.1144, 0.4523, 0.0094]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.9044e-05, 3.2165e-07, 9.8291e-01, 1.3889e-05, 1.7049e-02]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0186, 0.9813, 0.0001]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+4_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:03:47.174761: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.943062984143
+('loss:', tensor(0.7824, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0119, 0.4662, 0.1842, 0.0713, 0.2388, 0.0276]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0119, 0.4662, 0.1842, 0.0713, 0.2388, 0.0276]], grad_fn=<SoftmaxBackward>), tensor([[0.1109, 0.0722, 0.0024, 0.8144, 0.0000]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0119, 0.4662, 0.1842, 0.0713, 0.2388, 0.0276]], grad_fn=<SoftmaxBackward>), tensor([[0.1109, 0.0722, 0.0024, 0.8144, 0.0000]], grad_fn=<SoftmaxBackward>), tensor([[0.1646, 0.0931, 0.7423]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.0119, 0.4662, 0.1842, 0.0713, 0.2388, 0.0276]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1109, 0.0722, 0.0024, 0.8144, 0.0000]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1646, 0.0931, 0.7423]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[5.5731e-07, 1.4695e-02, 9.0541e-03, 9.7625e-01]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0032, 0.0003, 0.9663, 0.0186, 0.0069, 0.0048]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.9980, 0.0005, 0.0000, 0.0013, 0.0002]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_3_2_3_2_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:14:44.188219: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.898965251962
+('loss:', tensor(1.1927, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0157, 0.0172, 0.0190, 0.8761, 0.0327, 0.0395]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0157, 0.0172, 0.0190, 0.8761, 0.0327, 0.0395]], grad_fn=<SoftmaxBackward>), tensor([[0.0055, 0.0025, 0.0536, 0.0011, 0.9374]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0157, 0.0172, 0.0190, 0.8761, 0.0327, 0.0395]], grad_fn=<SoftmaxBackward>), tensor([[0.0055, 0.0025, 0.0536, 0.0011, 0.9374]], grad_fn=<SoftmaxBackward>), tensor([[0.0351, 0.0933, 0.8716]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.0157, 0.0172, 0.0190, 0.8761, 0.0327, 0.0395]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0055, 0.0025, 0.0536, 0.0011, 0.9374]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0351, 0.0933, 0.8716]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0256, 0.2748, 0.0246, 0.6750]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[3.5335e-02, 4.4961e-02, 8.6119e-01, 2.6915e-03, 7.9949e-06, 5.5814e-02]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[1.5260e-06, 5.8238e-04, 4.9145e-04, 7.0875e-06, 7.2632e-02, 9.2629e-01]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_4_2_3_2_5
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:20:14.923753: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.898748228757
+('loss:', tensor(0.8569, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0112, 0.1442, 0.4553, 0.3209, 0.0076, 0.0608]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0112, 0.1442, 0.4553, 0.3209, 0.0076, 0.0608]], grad_fn=<SoftmaxBackward>), tensor([[7.2629e-07, 9.9999e-01, 5.3618e-07, 1.7768e-06, 3.5994e-06]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0112, 0.1442, 0.4553, 0.3209, 0.0076, 0.0608]], grad_fn=<SoftmaxBackward>), tensor([[7.2629e-07, 9.9999e-01, 5.3618e-07, 1.7768e-06, 3.5994e-06]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.9400, 0.0000, 0.0600]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.0112, 0.1442, 0.4553, 0.3209, 0.0076, 0.0608]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[7.2629e-07, 9.9999e-01, 5.3618e-07, 1.7768e-06, 3.5994e-06]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9400, 0.0000, 0.0600]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9824, 0.0019, 0.0154, 0.0003]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_1_0_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:30:18.155463: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.896436333943
+('loss:', tensor(0.7767, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3908, 0.2193, 0.0083, 0.0442, 0.3002, 0.0372]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3908, 0.2193, 0.0083, 0.0442, 0.3002, 0.0372]], grad_fn=<SoftmaxBackward>), tensor([[0.0003, 0.0000, 0.0000, 0.0039, 0.9958]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3908, 0.2193, 0.0083, 0.0442, 0.3002, 0.0372]], grad_fn=<SoftmaxBackward>), tensor([[0.0003, 0.0000, 0.0000, 0.0039, 0.9958]], grad_fn=<SoftmaxBackward>), tensor([[4.2055e-06, 9.9864e-01, 1.3549e-03]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.3908, 0.2193, 0.0083, 0.0442, 0.3002, 0.0372]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0003, 0.0000, 0.0000, 0.0039, 0.9958]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[4.2055e-06, 9.9864e-01, 1.3549e-03]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_4_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:36:54.801980: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.933893879183
+('loss:', tensor(0.8827, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0161, 0.6486, 0.0152, 0.1197, 0.1305, 0.0700]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0161, 0.6486, 0.0152, 0.1197, 0.1305, 0.0700]], grad_fn=<SoftmaxBackward>), tensor([[7.9479e-03, 6.0286e-01, 2.8777e-01, 1.0142e-01, 4.2390e-06]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0161, 0.6486, 0.0152, 0.1197, 0.1305, 0.0700]], grad_fn=<SoftmaxBackward>), tensor([[7.9479e-03, 6.0286e-01, 2.8777e-01, 1.0142e-01, 4.2390e-06]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0021, 0.0717, 0.9262]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.0161, 0.6486, 0.0152, 0.1197, 0.1305, 0.0700]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[7.9479e-03, 6.0286e-01, 2.8777e-01, 1.0142e-01, 4.2390e-06]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0021, 0.0717, 0.9262]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0004, 0.0614, 0.0221, 0.9162]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[4.6868e-02, 1.3372e-01, 8.7255e-02, 4.2610e-06, 7.2592e-01, 6.2335e-03]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[1.3682e-02, 4.0322e-05, 5.0757e-07, 6.7163e-01, 1.3858e-04, 3.1451e-01]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_1_2_3_4_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:39:08.578200: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.900377543397
+('loss:', tensor(1.6402, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0149, 0.0613, 0.2432, 0.6014, 0.0374, 0.0416]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0149, 0.0613, 0.2432, 0.6014, 0.0374, 0.0416]], grad_fn=<SoftmaxBackward>), tensor([[1.4815e-03, 8.1573e-06, 4.0620e-01, 5.9223e-01, 8.5235e-05]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0149, 0.0613, 0.2432, 0.6014, 0.0374, 0.0416]], grad_fn=<SoftmaxBackward>), tensor([[1.4815e-03, 8.1573e-06, 4.0620e-01, 5.9223e-01, 8.5235e-05]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0000, 0.9968, 0.0032]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.0149, 0.0613, 0.2432, 0.6014, 0.0374, 0.0416]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[1.4815e-03, 8.1573e-06, 4.0620e-01, 5.9223e-01, 8.5235e-05]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.9968, 0.0032]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_3_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:44:59.558240: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.941838991507
+('loss:', tensor(0.9753, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0055, 0.0497, 0.0055, 0.6293, 0.2314, 0.0787]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0055, 0.0497, 0.0055, 0.6293, 0.2314, 0.0787]], grad_fn=<SoftmaxBackward>), tensor([[0.0356, 0.0001, 0.0246, 0.0041, 0.9357]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0055, 0.0497, 0.0055, 0.6293, 0.2314, 0.0787]], grad_fn=<SoftmaxBackward>), tensor([[0.0356, 0.0001, 0.0246, 0.0041, 0.9357]], grad_fn=<SoftmaxBackward>), tensor([[0.9901, 0.0086, 0.0013]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.0055, 0.0497, 0.0055, 0.6293, 0.2314, 0.0787]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0356, 0.0001, 0.0246, 0.0041, 0.9357]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9901, 0.0086, 0.0013]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[1.2344e-06, 4.0788e-01, 4.2775e-01, 1.6436e-01]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_4_0_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 07:54:02.012108: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.916702951112
+('loss:', tensor(1.2731, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.4462, 0.0098, 0.0460, 0.2939, 0.1940, 0.0102]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.4462, 0.0098, 0.0460, 0.2939, 0.1940, 0.0102]], grad_fn=<SoftmaxBackward>), tensor([[0.0005, 0.0037, 0.0000, 0.7808, 0.2149]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.4462, 0.0098, 0.0460, 0.2939, 0.1940, 0.0102]], grad_fn=<SoftmaxBackward>), tensor([[0.0005, 0.0037, 0.0000, 0.7808, 0.2149]], grad_fn=<SoftmaxBackward>), tensor([[8.2909e-01, 1.7091e-01, 4.3626e-06]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.4462, 0.0098, 0.0460, 0.2939, 0.1940, 0.0102]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0005, 0.0037, 0.0000, 0.7808, 0.2149]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[8.2909e-01, 1.7091e-01, 4.3626e-06]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0141, 0.6461, 0.3392, 0.0006]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_3_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:03:06.188308: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.913840109655
+('loss:', tensor(1.5340, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0472, 0.5188, 0.3568, 0.0226, 0.0194, 0.0352]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0472, 0.5188, 0.3568, 0.0226, 0.0194, 0.0352]], grad_fn=<SoftmaxBackward>), tensor([[9.9997e-01, 1.8685e-06, 5.2926e-07, 1.6286e-05, 1.5719e-05]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0472, 0.5188, 0.3568, 0.0226, 0.0194, 0.0352]], grad_fn=<SoftmaxBackward>), tensor([[9.9997e-01, 1.8685e-06, 5.2926e-07, 1.6286e-05, 1.5719e-05]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0105, 0.9726, 0.0169]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.0472, 0.5188, 0.3568, 0.0226, 0.0194, 0.0352]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.9997e-01, 1.8685e-06, 5.2926e-07, 1.6286e-05, 1.5719e-05]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0105, 0.9726, 0.0169]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:05:17.616851: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.923901049532
+('loss:', tensor(0.6320, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0104, 0.5823, 0.2154, 0.1106, 0.0605, 0.0208]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0104, 0.5823, 0.2154, 0.1106, 0.0605, 0.0208]], grad_fn=<SoftmaxBackward>), tensor([[6.1243e-04, 6.3860e-03, 3.2909e-09, 4.3990e-06, 9.9300e-01]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0104, 0.5823, 0.2154, 0.1106, 0.0605, 0.0208]], grad_fn=<SoftmaxBackward>), tensor([[6.1243e-04, 6.3860e-03, 3.2909e-09, 4.3990e-06, 9.9300e-01]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0007, 0.9991, 0.0001]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.0104, 0.5823, 0.2154, 0.1106, 0.0605, 0.0208]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[6.1243e-04, 6.3860e-03, 3.2909e-09, 4.3990e-06, 9.9300e-01]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0007, 0.9991, 0.0001]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_4_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:10:02.377582: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.939611219384
+('loss:', tensor(0.5156, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.4148, 0.0815, 0.0644, 0.2992, 0.1320, 0.0082]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.4148, 0.0815, 0.0644, 0.2992, 0.1320, 0.0082]], grad_fn=<SoftmaxBackward>), tensor([[0.6030, 0.0058, 0.0002, 0.3344, 0.0566]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.4148, 0.0815, 0.0644, 0.2992, 0.1320, 0.0082]], grad_fn=<SoftmaxBackward>), tensor([[0.6030, 0.0058, 0.0002, 0.3344, 0.0566]], grad_fn=<SoftmaxBackward>), tensor([[0.9706, 0.0023, 0.0271]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.4148, 0.0815, 0.0644, 0.2992, 0.1320, 0.0082]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.6030, 0.0058, 0.0002, 0.3344, 0.0566]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.9706, 0.0023, 0.0271]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0586, 0.0465, 0.8207, 0.0742]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_0_0_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:14:46.940447: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.927195273705
+('loss:', tensor(1.4959, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0306, 0.3702, 0.1204, 0.0115, 0.4409, 0.0263]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0306, 0.3702, 0.1204, 0.0115, 0.4409, 0.0263]], grad_fn=<SoftmaxBackward>), tensor([[6.8278e-04, 9.8881e-01, 9.4013e-07, 1.0481e-02, 2.6324e-05]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0306, 0.3702, 0.1204, 0.0115, 0.4409, 0.0263]], grad_fn=<SoftmaxBackward>), tensor([[6.8278e-04, 9.8881e-01, 9.4013e-07, 1.0481e-02, 2.6324e-05]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.0344, 0.8868, 0.0788]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.0306, 0.3702, 0.1204, 0.0115, 0.4409, 0.0263]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[6.8278e-04, 9.8881e-01, 9.4013e-07, 1.0481e-02, 2.6324e-05]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0344, 0.8868, 0.0788]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+4_1_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:16:42.247822: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.946189381954
+('loss:', tensor(0.8992, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1992, 0.0125, 0.4740, 0.0454, 0.0995, 0.1694]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1992, 0.0125, 0.4740, 0.0454, 0.0995, 0.1694]], grad_fn=<SoftmaxBackward>), tensor([[0.0001, 0.0439, 0.0009, 0.9549, 0.0002]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1992, 0.0125, 0.4740, 0.0454, 0.0995, 0.1694]], grad_fn=<SoftmaxBackward>), tensor([[0.0001, 0.0439, 0.0009, 0.9549, 0.0002]], grad_fn=<SoftmaxBackward>), tensor([[0.0026, 0.9383, 0.0591]], grad_fn=<SoftmaxBackward>)])
+3
+('softmax_outputs: ', tensor([[0.1992, 0.0125, 0.4740, 0.0454, 0.0995, 0.1694]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0001, 0.0439, 0.0009, 0.9549, 0.0002]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0026, 0.9383, 0.0591]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_3_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:27:40.757951: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.941430402946
+('loss:', tensor(0.8063, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.7585, 0.0251, 0.0252, 0.0707, 0.0985, 0.0219]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.7585, 0.0251, 0.0252, 0.0707, 0.0985, 0.0219]], grad_fn=<SoftmaxBackward>), tensor([[0.4944, 0.4663, 0.0102, 0.0035, 0.0255]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.7585, 0.0251, 0.0252, 0.0707, 0.0985, 0.0219]], grad_fn=<SoftmaxBackward>), tensor([[0.4944, 0.4663, 0.0102, 0.0035, 0.0255]], grad_fn=<SoftmaxBackward>), tensor([[0.7485, 0.2506, 0.0009]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.7585, 0.0251, 0.0252, 0.0707, 0.0985, 0.0219]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4944, 0.4663, 0.0102, 0.0035, 0.0255]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.7485, 0.2506, 0.0009]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1866, 0.7080, 0.0001, 0.1052]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_0_0_1
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:34:21.928023: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.92685114983
+('loss:', tensor(1.4975, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3844, 0.0027, 0.0029, 0.5360, 0.0719, 0.0022]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3844, 0.0027, 0.0029, 0.5360, 0.0719, 0.0022]], grad_fn=<SoftmaxBackward>), tensor([[0.0917, 0.8518, 0.0563, 0.0002, 0.0000]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3844, 0.0027, 0.0029, 0.5360, 0.0719, 0.0022]], grad_fn=<SoftmaxBackward>), tensor([[0.0917, 0.8518, 0.0563, 0.0002, 0.0000]], grad_fn=<SoftmaxBackward>), tensor([[0.4840, 0.0008, 0.5152]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.3844, 0.0027, 0.0029, 0.5360, 0.0719, 0.0022]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0917, 0.8518, 0.0563, 0.0002, 0.0000]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4840, 0.0008, 0.5152]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[4.4108e-05, 9.9969e-01, 7.8957e-06, 2.5533e-04]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.9726e-03, 9.9650e-01, 3.2581e-10, 2.7304e-04, 2.5336e-04, 3.8091e-06]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.5945, 0.1591, 0.0420, 0.1179, 0.0208, 0.0656]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_1_2_1_1_0
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:36:30.899204: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.908562209125
+('loss:', tensor(1.7910, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3262, 0.1989, 0.1133, 0.2672, 0.0494, 0.0449]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3262, 0.1989, 0.1133, 0.2672, 0.0494, 0.0449]], grad_fn=<SoftmaxBackward>), tensor([[0.0403, 0.0000, 0.0007, 0.0002, 0.9587]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.3262, 0.1989, 0.1133, 0.2672, 0.0494, 0.0449]], grad_fn=<SoftmaxBackward>), tensor([[0.0403, 0.0000, 0.0007, 0.0002, 0.9587]], grad_fn=<SoftmaxBackward>), tensor([[0.0000, 0.0004, 0.9996]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.3262, 0.1989, 0.1133, 0.2672, 0.0494, 0.0449]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0403, 0.0000, 0.0007, 0.0002, 0.9587]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.0004, 0.9996]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.7799e-04, 1.5347e-07, 9.9874e-01, 2.7813e-04]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.0366e-09, 9.9997e-01, 1.2966e-07, 1.0385e-05, 1.5692e-05, 4.6676e-09]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[8.9947e-04, 1.2637e-03, 9.4530e-02, 9.0322e-01, 8.5440e-05, 1.7732e-07]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+0_4_2_2_1_3
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:45:45.459235: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.895940189236
+('loss:', tensor(1.1341, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0394, 0.0027, 0.0281, 0.6202, 0.2781, 0.0314]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0394, 0.0027, 0.0281, 0.6202, 0.2781, 0.0314]], grad_fn=<SoftmaxBackward>), tensor([[0.4286, 0.0041, 0.5659, 0.0001, 0.0013]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0394, 0.0027, 0.0281, 0.6202, 0.2781, 0.0314]], grad_fn=<SoftmaxBackward>), tensor([[0.4286, 0.0041, 0.5659, 0.0001, 0.0013]], grad_fn=<SoftmaxBackward>), tensor([[0.2624, 0.0005, 0.7371]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.0394, 0.0027, 0.0281, 0.6202, 0.2781, 0.0314]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.4286, 0.0041, 0.5659, 0.0001, 0.0013]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.2624, 0.0005, 0.7371]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.9700e-01, 1.1359e-03, 5.3144e-06, 1.8594e-03]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[9.3260e-08, 9.1273e-09, 9.9990e-01, 9.5911e-05, 4.7406e-09, 4.4096e-06]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[3.2015e-02, 1.0116e-06, 9.6204e-01, 3.3083e-08, 4.6590e-03, 1.2881e-03]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+3_2_2_0_2_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:49:00.252060: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.629193875571
+('loss:', tensor(0.8770, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1120, 0.1129, 0.0667, 0.0127, 0.0144, 0.6814]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1120, 0.1129, 0.0667, 0.0127, 0.0144, 0.6814]], grad_fn=<SoftmaxBackward>), tensor([[0.0074, 0.6218, 0.0117, 0.2665, 0.0926]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.1120, 0.1129, 0.0667, 0.0127, 0.0144, 0.6814]], grad_fn=<SoftmaxBackward>), tensor([[0.0074, 0.6218, 0.0117, 0.2665, 0.0926]], grad_fn=<SoftmaxBackward>), tensor([[0.1138, 0.0518, 0.8344]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.1120, 0.1129, 0.0667, 0.0127, 0.0144, 0.6814]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0074, 0.6218, 0.0117, 0.2665, 0.0926]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.1138, 0.0518, 0.8344]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[6.7315e-01, 3.2677e-01, 7.0934e-05, 4.6645e-08]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.4848e-01, 5.2161e-01, 1.8460e-01, 4.1428e-06, 4.5304e-02, 1.4008e-07]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[3.6562e-02, 3.6253e-03, 2.3789e-01, 5.7414e-04, 7.2135e-01, 2.3877e-06]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+5_1_2_0_1_4
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 08:57:47.581713: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.628805697689
+('loss:', tensor(1.5173, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0127, 0.0838, 0.8074, 0.0018, 0.0177, 0.0765]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0127, 0.0838, 0.8074, 0.0018, 0.0177, 0.0765]], grad_fn=<SoftmaxBackward>), tensor([[5.0080e-06, 9.9987e-01, 1.6062e-08, 1.2798e-04, 5.6969e-07]],
+       grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0127, 0.0838, 0.8074, 0.0018, 0.0177, 0.0765]], grad_fn=<SoftmaxBackward>), tensor([[5.0080e-06, 9.9987e-01, 1.6062e-08, 1.2798e-04, 5.6969e-07]],
+       grad_fn=<SoftmaxBackward>), tensor([[0.7283, 0.2686, 0.0031]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+4
+('softmax_outputs: ', tensor([[0.0127, 0.0838, 0.8074, 0.0018, 0.0177, 0.0765]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[5.0080e-06, 9.9987e-01, 1.6062e-08, 1.2798e-04, 5.6969e-07]],
+       grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.7283, 0.2686, 0.0031]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0001, 0.0000, 0.9320, 0.0679]], grad_fn=<SoftmaxBackward>))
+resulted_str:
+2_1_0_2
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 09:10:08.116104: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+reward: 0.914294734911
+('loss:', tensor(0.5500, grad_fn=<NegBackward>))
+{'type_of_interaction': Linear(in_features=100, out_features=3, bias=True), 'eudist_margin': Linear(in_features=100, out_features=4, bias=True), 'dim_of_latent_factor': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim2': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim3': Linear(in_features=100, out_features=6, bias=True), 'mlp_dim1': Linear(in_features=100, out_features=6, bias=True), 'l2_reg': Linear(in_features=100, out_features=5, bias=True)}
+('input:', (1, 1, 100))
+('hidden:', (1, 1, 100))
+('dim_of_latent_factor', [25, 50, 75, 100, 125, 150])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0440, 0.8441, 0.0003, 0.0164, 0.0832, 0.0121]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('l2_reg', [0.1, 0.01, 0.001, 0.0001, 1e-05])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0440, 0.8441, 0.0003, 0.0164, 0.0832, 0.0121]], grad_fn=<SoftmaxBackward>), tensor([[0.3544, 0.0436, 0.0000, 0.5036, 0.0984]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('type_of_interaction', ['PairwiseEuDist', 'PairwiseLog', 'PointwiseMLPCE'])
+('output:', (1, 100))
+('softmax_outputs_stored:', [tensor([[0.0440, 0.8441, 0.0003, 0.0164, 0.0832, 0.0121]], grad_fn=<SoftmaxBackward>), tensor([[0.3544, 0.0436, 0.0000, 0.5036, 0.0984]], grad_fn=<SoftmaxBackward>), tensor([[0.0001, 0.0000, 0.9999]], grad_fn=<SoftmaxBackward>)])
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+('input:', (1, 100))
+('hidden:', (1, 1, 100))
+6
+('softmax_outputs: ', tensor([[0.0440, 0.8441, 0.0003, 0.0164, 0.0832, 0.0121]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.3544, 0.0436, 0.0000, 0.5036, 0.0984]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0001, 0.0000, 0.9999]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0019, 0.9914, 0.0063, 0.0003]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[0.0000, 0.0009, 0.0002, 0.4583, 0.1660, 0.3745]], grad_fn=<SoftmaxBackward>))
+('softmax_outputs: ', tensor([[2.1562e-08, 3.9371e-01, 3.3403e-04, 4.7411e-05, 4.8119e-07, 6.0591e-01]],
+       grad_fn=<SoftmaxBackward>))
+resulted_str:
+1_3_2_1_3_5
+/home/xuan/anaconda2/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-12 09:16:51.934736: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
