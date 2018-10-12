@@ -7,7 +7,7 @@ from openrec.utils.samplers import EvaluationSampler
 import dataloader
 
 raw_data = dataloader.load_citeulike()
-dim_embed = 50
+dim_embed = CHANGE_DIM_HERE
 total_iter = 10000
 batch_size = 1000
 eval_iter = 10000
@@ -22,11 +22,12 @@ val_sampler = EvaluationSampler(batch_size=batch_size, dataset=val_dataset)
 test_sampler = EvaluationSampler(batch_size=batch_size, dataset=test_dataset)
 
 ped_model = PED(batch_size=batch_size, total_users=train_dataset.total_users(), total_items=train_dataset.total_items(), 
-                dim_embed=dim_embed, eu_dist_margin=1.0, save_model_dir='ped_recommender/', train=True, serve=True)
+                l2_reg=CHANGE_L2_REG_HERE,
+                dim_embed=dim_embed, eu_dist_margin=CHANGE_MARGIN_HERE, save_model_dir='ped_recommender/', train=True, serve=True)
 
 model_trainer = ModelTrainer(model=ped_model)
 
 auc_evaluator = AUC()
 model_trainer.train(total_iter=total_iter, eval_iter=eval_iter, save_iter=save_iter, train_sampler=train_sampler, 
-                    eval_samplers=[val_sampler, test_sampler], evaluators=[auc_evaluator])
+                    eval_samplers=[val_sampler], evaluators=[auc_evaluator])
 
