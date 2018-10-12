@@ -7,7 +7,7 @@ from openrec.utils.samplers import EvaluationSampler
 import dataloader
 
 raw_data = dataloader.load_citeulike()
-dim_embed = 50
+dim_embed = CHANGE_DIM_HERE
 total_iter = 10000
 batch_size = 1000
 eval_iter = 10000
@@ -22,7 +22,8 @@ val_sampler = EvaluationSampler(batch_size=batch_size, dataset=val_dataset)
 test_sampler = EvaluationSampler(batch_size=batch_size, dataset=test_dataset)
 
 model = PMLP(batch_size=batch_size, total_users=train_dataset.total_users(), total_items=train_dataset.total_items(), 
-             mlp_dims=[100, 100, 1], dim_user_embed=dim_embed, dim_item_embed=dim_embed, save_model_dir='pmlp_recommender/', train=True, serve=True)
+             l2_reg=CHANGE_L2_REG_HERE,
+             mlp_dims=CHANGE_MLP_DIMS_HERE, dim_user_embed=dim_embed, dim_item_embed=dim_embed, save_model_dir='pmlp_recommender/', train=True, serve=True)
 
 auc_evaluator = AUC()
 recall_evaluator = Recall(recall_at=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100])    
