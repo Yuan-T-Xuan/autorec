@@ -38,22 +38,18 @@ hyper_params = [
     ("mlp_dim3", [-1, 50, 75, 100, 125, 150])
 ]
 
-def train(meta_decoder, decoder_optimizer):
-  
+def train(meta_decoder, decoder_optimizer, fclayers_for_hyper_params):
+
     decoder_hidden = meta_decoder.initHidden()
     decoder_optimizer.zero_grad()
     
     output = torch.zeros([1, 1, meta_decoder.output_size], device=device)
     softmax = nn.Softmax(dim=1)
     softmax_outputs_stored = list()
-    fclayers_for_hyper_params = dict()
     
-    for hp in hyper_params:
-        fclayers_for_hyper_params[hp[0]] = nn.Linear(meta_decoder.output_size, len(hp[1]))
-    print(fclayers_for_hyper_params)
     
     loss = 0
-    # check point
+    # 
     for i in range(3):
         output, decoder_hidden = meta_decoder(output, decoder_hidden)
         print(hyper_params[i])
@@ -73,7 +69,7 @@ def train(meta_decoder, decoder_optimizer):
         pass
     else:
         # PointwiseMLPCE
-        for i in range(3, 6):
+        for i in range(4, 7):
             output, decoder_hidden = meta_decoder(output, decoder_hidden)
             softmax_outputs_stored.append(softmax(fclayers_for_hyper_params[hyper_params[i][0]](output)))
     print(len(softmax_outputs_stored))
@@ -107,9 +103,15 @@ def trainIters():
     num_iters = 100
   
     meta_decoder = DecoderRNN(100,100)
+    fclayers_for_hyper_params = dict()
+    
+    for hp in hyper_params:
+        fclayers_for_hyper_params[hp[0]] = nn.Linear(meta_decoder.output_size, len(hp[1]))
+    print(fclayers_for_hyper_params)
+
     optimizer = optim.Adam(meta_decoder.parameters(), lr=0.01)
     for iteration in range(num_iters):
-        train(meta_decoder, optimizer)
+        train(meta_decoder, optimizer, fclayers_for_hyper_params)
 
 
 trainIters()
