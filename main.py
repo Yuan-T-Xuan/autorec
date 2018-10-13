@@ -29,7 +29,7 @@ def calc_reward_given_descriptor(descriptor):
         f = open("result_tmp.out")
         lines = f.readlines()
         f.close()
-        return float(lines[-1].split()[-1])
+        return (float(lines[-1].split()[-1]) - 0.92) * 10
         #
     elif descriptor[2] == 1:
         f = open("bpr_citeulike.py")
@@ -44,7 +44,7 @@ def calc_reward_given_descriptor(descriptor):
         f = open("result_tmp.out")
         lines = f.readlines()
         f.close()
-        return float(lines[-1].split()[-1])
+        return (float(lines[-1].split()[-1]) - 0.92) * 10
         #
     elif descriptor[2] == 2:
         # construct MLP_DIMS first
@@ -72,7 +72,7 @@ def calc_reward_given_descriptor(descriptor):
         f = open("result_tmp.out")
         lines = f.readlines()
         f.close()
-        return float(lines[-1].split()[-1])
+        return (float(lines[-1].split()[-1]) - 0.92) * 10
         #
     else:
         print("wrong interaction type")
