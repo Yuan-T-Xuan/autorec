@@ -4,6 +4,7 @@ import torch.nn as nn
 from torch import optim
 import torch.nn.functional as F
 from main import *
+from torch.distributions.categorical import Categorical
 
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 device = torch.device("cpu")
@@ -58,7 +59,7 @@ def train(meta_decoder, decoder_optimizer, fclayers_for_hyper_params):
         print('softmax_outputs_stored:', softmax_outputs_stored)
         #
     output_interaction = softmax_outputs_stored[-1]
-    type_of_interaction = torch.argmax(output_interaction)
+    type_of_interaction = Categorical(output_interaction).sample().tolist()[0]
     if type_of_interaction == 0:
         # PairwiseEuDist
         for i in range(3, 4):
@@ -78,9 +79,13 @@ def train(meta_decoder, decoder_optimizer, fclayers_for_hyper_params):
     resulted_str = []
     for outputs in softmax_outputs_stored:
         print("softmax_outputs: ", outputs)
-        idx = torch.argmax(outputs)
+        # idx = torch.argmax(outputs)
+        idx = Categorical(outputs).sample()
         # print('idx:', idx)
-        resulted_str.append(idx.item())
+        # resulted_str.append(idx.item())
+        resulted_str.append(idx.tolist()[0])
+    resulted_str[2] = type_of_interaction
+    resulted_idx = resulted_str
     resulted_str = "_".join(map(str, resulted_str))
     print("resulted_str:")
     print(resulted_str)
@@ -90,7 +95,9 @@ def train(meta_decoder, decoder_optimizer, fclayers_for_hyper_params):
     print("reward: " + str(reward))
     expectedReward = 0
     for i in range(len(softmax_outputs_stored)):
-        logprob = torch.log(torch.max(softmax_outputs_stored[i]))
+        # print(softmax_outputs_stored[i][0].tolist())
+        # print(resulted_idx[i])
+        logprob = torch.log(softmax_outputs_stored[i][0][resulted_idx[i]])
         expectedReward += logprob * reward
     loss = - expectedReward   
     print('loss:', loss)

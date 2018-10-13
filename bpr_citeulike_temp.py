@@ -7,7 +7,7 @@ from openrec.utils.samplers import EvaluationSampler
 import dataloader
 
 raw_data = dataloader.load_citeulike()
-dim_embed = CHANGE_DIM_HERE
+dim_embed = 100
 total_iter = 10000
 batch_size = 1000
 eval_iter = 10000
@@ -22,7 +22,7 @@ val_sampler = EvaluationSampler(batch_size=batch_size, dataset=val_dataset)
 test_sampler = EvaluationSampler(batch_size=batch_size, dataset=test_dataset)
 
 bpr_model = BPR(batch_size=batch_size, total_users=train_dataset.total_users(), total_items=train_dataset.total_items(), 
-                l2_reg=CHANGE_L2_REG_HERE,
+                l2_reg=0.01,
                 dim_user_embed=dim_embed, dim_item_embed=dim_embed, save_model_dir='bpr_recommender/', train=True, serve=True)
 
 model_trainer = ModelTrainer(model=bpr_model)

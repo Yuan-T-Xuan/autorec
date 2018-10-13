@@ -1,13 +1,13 @@
 from openrec import ModelTrainer
 from openrec.utils import Dataset
-from BPR import BPR
+from PED import PED
 from openrec.utils.evaluators import AUC
 from openrec.utils.samplers import RandomPairwiseSampler
 from openrec.utils.samplers import EvaluationSampler
 import dataloader
 
 raw_data = dataloader.load_citeulike()
-dim_embed = CHANGE_DIM_HERE
+dim_embed = 100
 total_iter = 10000
 batch_size = 1000
 eval_iter = 10000
@@ -21,11 +21,11 @@ train_sampler = RandomPairwiseSampler(batch_size=batch_size, dataset=train_datas
 val_sampler = EvaluationSampler(batch_size=batch_size, dataset=val_dataset)
 test_sampler = EvaluationSampler(batch_size=batch_size, dataset=test_dataset)
 
-bpr_model = BPR(batch_size=batch_size, total_users=train_dataset.total_users(), total_items=train_dataset.total_items(), 
-                l2_reg=CHANGE_L2_REG_HERE,
-                dim_user_embed=dim_embed, dim_item_embed=dim_embed, save_model_dir='bpr_recommender/', train=True, serve=True)
+ped_model = PED(batch_size=batch_size, total_users=train_dataset.total_users(), total_items=train_dataset.total_items(), 
+                l2_reg=0.1,
+                dim_embed=dim_embed, eu_dist_margin=2.0, save_model_dir='ped_recommender/', train=True, serve=True)
 
-model_trainer = ModelTrainer(model=bpr_model)
+model_trainer = ModelTrainer(model=ped_model)
 
 auc_evaluator = AUC()
 model_trainer.train(total_iter=total_iter, eval_iter=eval_iter, save_iter=save_iter, train_sampler=train_sampler, 
