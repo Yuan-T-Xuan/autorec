@@ -12,6 +12,9 @@ from calc_reward_given_descriptor import calc_reward_given_descriptor
 device = torch.device("cpu")
 print(device)
 
+moving_average_alpha = 0.2
+moving_average = -19013 # a MAGIC NUMBER
+
 class DecoderRNN(nn.Module):
     def __init__(self, hidden_size, output_size):
         super(DecoderRNN, self).__init__()
@@ -30,6 +33,8 @@ class DecoderRNN(nn.Module):
         return torch.zeros(1, 1, self.hidden_size, device=device)
 
 def train(meta_decoder, decoder_optimizer, fclayers_for_hyper_params):
+    global moving_average
+    global moving_average_alpha
     decoder_hidden = meta_decoder.initHidden()
     decoder_optimizer.zero_grad()
     output = torch.zeros([1, 1, meta_decoder.output_size], device=device)
@@ -70,7 +75,16 @@ def train(meta_decoder, decoder_optimizer, fclayers_for_hyper_params):
     print("resulted_str: " + resulted_str)
     # 
     reward = calc_reward_given_descriptor(resulted_str)
-    print("reward: " + str(reward))
+    if moving_average == -19013:
+        moving_average = reward
+        reward = 0.0
+    else:
+        tmp = reward
+        reward = reward - moving_average
+        moving_average = moving_average_alpha * tmp + (1.0 - moving_average_alpha) * moving_average
+    #
+    print("current reward: " + str(reward))
+    print("current moving average: " + str(moving_average))
     expectedReward = 0
     for i in range(len(softmax_outputs_stored)):
         logprob = torch.log(softmax_outputs_stored[i][0][resulted_idx[i]])

@@ -31,5 +31,5 @@ recall_evaluator = Recall(recall_at=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 model_trainer = ModelTrainer(model=model)
 
 model_trainer.train(total_iter=total_iter, eval_iter=eval_iter, save_iter=save_iter, train_sampler=train_sampler, 
-                    eval_samplers=[val_sampler], evaluators=[auc_evaluator, recall_evaluator])
+                    eval_samplers=[val_sampler], evaluators=[auc_evaluator])
 

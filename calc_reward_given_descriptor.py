@@ -21,7 +21,6 @@ def calc_reward_given_descriptor(descriptor):
         f.close()
         print("***************")
         print(lines[-1])
-        print(lines[-1].split())
         return float(lines[-1].split()[-1])
         #
     elif descriptor[2] == 1:
@@ -39,7 +38,6 @@ def calc_reward_given_descriptor(descriptor):
         f.close()
         print("***************")
         print(lines[-1])
-        print(lines[-1].split())
         return float(lines[-1].split()[-1])
         #
     elif descriptor[2] == 2:
@@ -69,7 +67,6 @@ def calc_reward_given_descriptor(descriptor):
         f.close()
         print("***************")
         print(lines[-1])
-        print(lines[-1].split())
         return float(lines[-1].split()[-1])
         #
     else:
