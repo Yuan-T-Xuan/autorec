@@ -8,8 +8,8 @@ from torch.distributions.categorical import Categorical
 from hyper_params import hyper_params
 from calc_reward_given_descriptor import calc_reward_given_descriptor
 
-# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-device = torch.device("cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# device = torch.device("cpu")
 print(device)
 
 moving_average_alpha = 0.2
@@ -110,5 +110,6 @@ def trainIters():
         train(meta_decoder, optimizer, fclayers_for_hyper_params)
 
 
-trainIters()
+if __name__ == "__main__":
+    trainIters()
 
