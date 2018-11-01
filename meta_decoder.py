@@ -26,6 +26,7 @@ class DecoderRNN(nn.Module):
 
     def forward(self, input, hidden):
         # input should be in shape (1,1,-1)
+        self.gru.flatten_parameters()
         output, hidden = self.gru(input.view(1, 1, -1), hidden)
         return self.out(output[0]), hidden
 
