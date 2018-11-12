@@ -105,7 +105,7 @@ def trainIters():
         fclayers_for_hyper_params[hp[0]] = nn.Linear(meta_decoder.output_size, len(hp[1]))
     print(fclayers_for_hyper_params)
 
-    optimizer = optim.Adam(meta_decoder.parameters(), lr=0.01)
+    optimizer = optim.Adam(meta_decoder.parameters(), lr=0.001)
     for iteration in range(num_iters):
         train(meta_decoder, optimizer, fclayers_for_hyper_params)
 

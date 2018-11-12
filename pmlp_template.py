@@ -9,9 +9,9 @@ import dataloader
 #raw_data = dataloader.load_citeulike()
 raw_data = dataloader.load_tradesy()
 dim_embed = CHANGE_DIM_HERE
-total_iter = 60000
+total_iter = 70000
 batch_size = 1000
-eval_iter = 60000
+eval_iter = 70000
 save_iter = eval_iter
 
 train_dataset = Dataset(raw_data['train_data'], raw_data['total_users'], raw_data['total_items'], name='Train')
