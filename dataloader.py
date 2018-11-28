@@ -36,3 +36,14 @@ def load_tradesy():
 
     return raw_data
 
+def load_kkbox():
+
+    raw_data = dict()
+
+    raw_data['train_data'] = np.load("dataset/kkbox/traindata.npy")
+    raw_data['val_data'] = np.load("dataset/kkbox/valdata.npy")
+    raw_data['test_data'] = np.load("dataset/kkbox/testdata.npy")
+
+    raw_data['total_users'] = 27113
+    raw_data['total_items'] = 223723
+
