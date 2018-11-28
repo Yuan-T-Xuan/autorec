@@ -7,11 +7,11 @@ from openrec.utils.samplers import EvaluationSampler
 import dataloader
 
 #raw_data = dataloader.load_citeulike()
-raw_data = dataloader.load_tradesy()
+raw_data = dataloader.load_kkbox()
 dim_embed = CHANGE_DIM_HERE
-total_iter = 70000
+total_iter = 200000
 batch_size = 1000
-eval_iter = 70000
+eval_iter = total_iter
 save_iter = eval_iter
 
 train_dataset = Dataset(raw_data['train_data'], raw_data['total_users'], raw_data['total_items'], name='Train')
