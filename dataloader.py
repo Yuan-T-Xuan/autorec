@@ -46,4 +46,5 @@ def load_kkbox():
 
     raw_data['total_users'] = 27113
     raw_data['total_items'] = 223723
+    return raw_data
 
