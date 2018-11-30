@@ -48,3 +48,14 @@ def load_kkbox():
     raw_data['total_items'] = 223723
     return raw_data
 
+def load_taobao():
+
+    raw_data = dict()
+
+    raw_data['train_data'] = np.load("dataset/taobao/traindata.npy")
+    raw_data['val_data'] = np.load("dataset/taobao/valdata.npy")
+    raw_data['test_data'] = np.load("dataset/taobao/testdata.npy")
+
+    raw_data['total_users'] = 20000
+    raw_data['total_items'] = 643374
+    return raw_data
