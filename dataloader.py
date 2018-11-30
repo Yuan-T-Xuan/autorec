@@ -1,4 +1,15 @@
 import numpy as np
+import json
+
+def load_dataset():
+    f = open("dataset_info.json")
+    dataset_info = json.load(f)
+    f.close()
+    dataset_info['train_data'] = np.load(dataset_info['train_data_path'])
+    dataset_info['val_data'] = np.load(dataset_info['val_data_path'])
+    dataset_info['test_data'] = np.load(dataset_info['test_data_path'])
+    return dataset_info
+
 
 def load_citeulike():
 

@@ -1,0 +1,9 @@
+{
+    "name": "citeulike",
+    "total_users": 5551,
+    "total_items": 16980,
+    "train_data_path": "dataset/citeulike/rsrf_user_data_train.npy",
+    "val_data_path": "dataset/citeulike/rsrf_user_data_val.npy",
+    "test_data_path": "dataset/citeulike/rsrf_user_data_test.npy",
+    "max_iteration": 10000
+}
