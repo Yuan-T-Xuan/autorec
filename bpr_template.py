@@ -10,7 +10,7 @@ import dataloader
 raw_data = dataloader.load_taobao()
 dim_embed = CHANGE_DIM_HERE
 total_iter = 200000
-batch_size = 1000
+batch_size = 10000
 eval_iter = total_iter
 save_iter = eval_iter
 

@@ -57,5 +57,5 @@ def load_taobao():
     raw_data['test_data'] = np.load("dataset/taobao/testdata.npy")
 
     raw_data['total_users'] = 20000
-    raw_data['total_items'] = 643374
+    raw_data['total_items'] = 643380
     return raw_data
