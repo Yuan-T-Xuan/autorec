@@ -7,7 +7,7 @@ from openrec.utils.samplers import EvaluationSampler
 import dataloader
 
 #raw_data = dataloader.load_citeulike()
-raw_data = dataloader.load_taobao()
+raw_data = dataloader.load_amazon_book()
 dim_embed = CHANGE_DIM_HERE
 total_iter = 200000
 batch_size = 10000
