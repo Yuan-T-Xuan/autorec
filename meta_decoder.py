@@ -62,7 +62,7 @@ def train(meta_decoder, decoder_optimizer):
         softmax_outputs_stored.append(each_softmax)
         idx = Categorical(each_softmax).sample()
         resulted_str.append(idx.tolist()[0])
-
+    resulted_idx = resulted_str
     resulted_str = "_".join(map(str, resulted_str))
     print("resulted_str: " + resulted_str)
     # 
