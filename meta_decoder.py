@@ -44,7 +44,7 @@ class DecoderMLP(nn.Module):
         return [out1, out2, out3, out4, out5, out6, out7]
 
 
-def train(meta_decoder, decoder_optimizer):
+def train(meta_decoder, decoder_optimizer, scheduler):
     global moving_average
     global moving_average_alpha
     decoder_optimizer.zero_grad()
@@ -87,15 +87,17 @@ def train(meta_decoder, decoder_optimizer):
     # finally, backpropagate the loss according to the policy
     loss.backward()
     decoder_optimizer.step()
+    scheduler.step()
 
 def trainIters():
-    num_iters = 1000
+    num_iters = 200
   
     meta_decoder = DecoderMLP(100,[6,5,3,4,6,6,6])
-
-    optimizer = optim.SGD(meta_decoder.parameters(), lr=0.001, momentum=0.9)
+    step_size = 5
+    optimizer = optim.Adam(meta_decoder.parameters(), lr=0.001)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size, gamma=0.1, last_epoch=-1)
     for iteration in range(num_iters):
-        train(meta_decoder, optimizer)
+        train(meta_decoder, optimizer,scheduler)
 
 
 if __name__ == "__main__":
