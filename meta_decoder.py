@@ -77,10 +77,22 @@ def train(meta_decoder, decoder_optimizer, scheduler):
     #
     print("current reward: " + str(reward))
     print("current moving average: " + str(moving_average))
+
+
     expectedReward = 0
-    for i in range(len(softmax_outputs_stored)):
+    for i in range(3):
         logprob = torch.log(softmax_outputs_stored[i][0][resulted_idx[i]])
         expectedReward += logprob * reward
+
+    type_of_interaction = resulted_idx[2]
+    if type_of_interaction == 0: # eudist
+        logprob = torch.log(softmax_outputs_stored[3][0][resulted_idx[3]])
+        expectedReward += logprob * reward
+    elif type_of_interaction == 2:
+        for i in range(4,7):
+            logprob = torch.log(softmax_outputs_stored[i][0][resulted_idx[i]])
+            expectedReward += logprob * reward
+
     loss = - expectedReward   
     print('loss:', loss)
 
@@ -95,7 +107,7 @@ def trainIters():
     meta_decoder = DecoderMLP(100,[6,5,3,4,6,6,6])
     step_size = 5
     optimizer = optim.Adam(meta_decoder.parameters(), lr=0.001)
-    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size, gamma=0.1, last_epoch=-1)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size, gamma=0.9, last_epoch=-1)
     for iteration in range(num_iters):
         train(meta_decoder, optimizer,scheduler)
 
