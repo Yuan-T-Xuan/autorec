@@ -43,8 +43,8 @@ def calc_reward_given_descriptor(descriptor):
     elif descriptor[2] == 2:
         # construct MLP_DIMS first
         MLP_DIMS = []
-        for i in range(len(descriptor) - 3):
-            curr_layer = hyper_params[4][1][descriptor[3+i]]
+        for i in range(len(descriptor) - 4):
+            curr_layer = hyper_params[4][1][descriptor[4+i]]
             if curr_layer < 0:
                 break
             else:
