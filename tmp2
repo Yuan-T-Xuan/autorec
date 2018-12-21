@@ -1,0 +1,988 @@
+Last login: Fri Dec 21 11:07:12 on ttys000
+Tonys-MacBook-Pro:~ xuan$ ssh -i Downloads/cornell-tech-sdl-yuan-east.pem ubuntu@18.234.136.8
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.0-1072-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+31 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Fri Dec 21 16:07:17 2018 from 108.169.200.192
+ubuntu@ip-172-31-20-99:~$ ls
+anaconda2  autorec
+ubuntu@ip-172-31-20-99:~$ mv autorec autorec-old
+ubuntu@ip-172-31-20-99:~$ ls
+anaconda2  autorec-old
+ubuntu@ip-172-31-20-99:~$ sudo reboot
+Connection to 18.234.136.8 closed by remote host.
+Connection to 18.234.136.8 closed.
+Tonys-MacBook-Pro:~ xuan$ 
+Tonys-MacBook-Pro:~ xuan$ 
+Tonys-MacBook-Pro:~ xuan$ 
+Tonys-MacBook-Pro:~ xuan$ ssh -i Downloads/cornell-tech-sdl-yuan-east.pem ubuntu@18.234.136.8
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.0-1074-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+31 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Fri Dec 21 17:41:09 2018 from 108.169.200.192
+ubuntu@ip-172-31-20-99:~$ logout
+Connection to 18.234.136.8 closed.
+Tonys-MacBook-Pro:~ xuan$ cd /Users/xuan/Documents/autorec
+Tonys-MacBook-Pro:autorec xuan$ python meta_decoder.py
+cpu
+('outputs: ', tensor([[0.5308, 0.4692]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5673, 0.4327]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_1
+2018-12-21 13:26:14.690935: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8977617721409569
+
+current reward: 0.0
+current moving average: 0.897761772141
+('loss:', tensor(-0., grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.5308, 0.4692]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5673, 0.4327]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_1
+2018-12-21 13:26:49.817521: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8932742205889043
+
+current reward: -0.00448755155205
+current moving average: 0.896864261831
+('loss:', tensor(-0.0066, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.5168, 0.4832]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5978, 0.4022]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:27:26.587338: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9319632007129859
+
+current reward: 0.0350989388824
+current moving average: 0.903884049607
+('loss:', tensor(0.0575, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.4978, 0.5022]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5783, 0.4217]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:28:18.822807: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9138791948849638
+
+current reward: 0.00999514527793
+current moving average: 0.905883078663
+('loss:', tensor(0.0124, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.4771, 0.5229]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5689, 0.4311]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:29:11.640290: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9295060484044612
+
+current reward: 0.0236229697418
+current moving average: 0.910607672611
+('loss:', tensor(0.0352, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.4558, 0.5442]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5508, 0.4492]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_0
+2018-12-21 13:30:05.195736: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8823638451416476
+
+current reward: -0.0282438274693
+current moving average: 0.904958907117
+('loss:', tensor(-0.0390, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.4328, 0.5672]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5293, 0.4707]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:30:41.643833: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9147604458505902
+
+current reward: 0.00980153873347
+current moving average: 0.906919214864
+('loss:', tensor(0.0118, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.4105, 0.5895]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.5160, 0.4840]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:31:35.258509: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9308974886107649
+
+current reward: 0.023978273747
+current moving average: 0.911714869613
+('loss:', tensor(0.0301, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.3892, 0.6108]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.4986, 0.5014]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:32:28.854070: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.913174421316139
+
+current reward: 0.00145955170293
+current moving average: 0.912006779954
+('loss:', tensor(0.0017, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.3701, 0.6299]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.4837, 0.5163]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_0
+2018-12-21 13:33:22.577865: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8732867727104623
+
+current reward: -0.0387200072433
+current moving average: 0.904262778505
+('loss:', tensor(-0.0666, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.3504, 0.6496]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.4643, 0.5357]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:33:58.800791: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9301402605028906
+
+current reward: 0.0258774819978
+current moving average: 0.909438274905
+('loss:', tensor(0.0273, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.3312, 0.6688]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.4420, 0.5580]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_0
+2018-12-21 13:34:53.396548: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8790785592629863
+
+current reward: -0.0303597156417
+current moving average: 0.903366331776
+('loss:', tensor(-0.0583, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.3131, 0.6869]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.4199, 0.5801]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:35:29.673259: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9144753565121526
+
+current reward: 0.0111090247358
+current moving average: 0.905588136724
+('loss:', tensor(0.0138, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2962, 0.7038]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.4037, 0.5963]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:36:22.779538: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9304412838485286
+
+current reward: 0.024853147125
+current moving average: 0.910558766149
+('loss:', tensor(0.0216, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2801, 0.7199]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.3857, 0.6143]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:37:14.958432: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9316315394235641
+
+current reward: 0.0210727732751
+current moving average: 0.914773320804
+('loss:', tensor(0.0172, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2647, 0.7353]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.3670, 0.6330]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:38:07.244874: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9141890798670314
+
+current reward: -0.000584240936488
+current moving average: 0.914656472616
+('loss:', tensor(-0.0008, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2512, 0.7488]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.3503, 0.6497]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:39:00.645595: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9154602928346987
+
+current reward: 0.000803820218477
+current moving average: 0.91481723666
+('loss:', tensor(0.0011, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2392, 0.7608]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.3361, 0.6639]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_0
+2018-12-21 13:39:55.523189: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8787447698612362
+
+current reward: -0.0360724667987
+current moving average: 0.9076027433
+('loss:', tensor(-0.0909, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2256, 0.7744]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.3189, 0.6811]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:40:32.802554: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9317930336254835
+
+current reward: 0.0241902903253
+current moving average: 0.912440801365
+('loss:', tensor(0.0155, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2127, 0.7873]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.3014, 0.6986]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:41:28.083161: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.93194200801401
+
+current reward: 0.0195012066488
+current moving average: 0.916341042695
+('loss:', tensor(0.0117, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.2005, 0.7995]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2839, 0.7161]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:42:22.364147: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9290082500434351
+
+current reward: 0.0126672073484
+current moving average: 0.918874484165
+('loss:', tensor(0.0071, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1892, 0.8108]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2672, 0.7328]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_1
+2018-12-21 13:43:17.845040: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8996004443198605
+
+current reward: -0.0192740398448
+current moving average: 0.915019676196
+('loss:', tensor(-0.0381, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1778, 0.8222]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2558, 0.7442]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:43:53.778707: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9324520219125636
+
+current reward: 0.0174323457168
+current moving average: 0.918506145339
+('loss:', tensor(0.0086, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1673, 0.8327]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2443, 0.7557]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:44:48.958903: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310537227905995
+
+current reward: 0.0125475774515
+current moving average: 0.921015660829
+('loss:', tensor(0.0058, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1576, 0.8424]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2332, 0.7668]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:45:46.543341: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9148949066736072
+
+current reward: -0.00612075415578
+current moving average: 0.919791509998
+('loss:', tensor(-0.0100, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1493, 0.8507]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2219, 0.7781]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:46:44.020974: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.930103136386175
+
+current reward: 0.0103116263879
+current moving average: 0.921853835276
+('loss:', tensor(0.0043, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1417, 0.8583]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2112, 0.7888]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:47:41.757362: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9303095201648803
+
+current reward: 0.00845568488906
+current moving average: 0.923544972254
+('loss:', tensor(0.0033, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1347, 0.8653]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.2011, 0.7989]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:48:38.207265: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9150944697529991
+
+current reward: -0.00845050250063
+current moving average: 0.921854871754
+('loss:', tensor(-0.0148, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1287, 0.8713]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1904, 0.8096]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:49:32.145444: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305138054170091
+
+current reward: 0.0086589336635
+current moving average: 0.923586658486
+('loss:', tensor(0.0030, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1232, 0.8768]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1807, 0.8193]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:50:25.837973: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9303239394694138
+
+current reward: 0.00673728098321
+current moving average: 0.924934114683
+('loss:', tensor(0.0022, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1182, 0.8818]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1717, 0.8283]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:51:19.657070: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9294649481031121
+
+current reward: 0.00453083342026
+current moving average: 0.925840281367
+('loss:', tensor(0.0014, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1135, 0.8865]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1636, 0.8364]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:52:13.466163: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310352726297682
+
+current reward: 0.00519499126287
+current moving average: 0.926879279619
+('loss:', tensor(0.0016, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1098, 0.8902]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1569, 0.8431]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_1
+2018-12-21 13:53:07.084493: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.897857882711272
+
+current reward: -0.0290213969082
+current moving average: 0.921075000238
+('loss:', tensor(-0.0691, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.1037, 0.8963]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1519, 0.8481]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:53:43.170689: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.930449812093598
+
+current reward: 0.00937481185576
+current moving average: 0.922949962609
+('loss:', tensor(0.0026, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0983, 0.9017]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1470, 0.8530]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:54:36.699404: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9135552143790222
+
+current reward: -0.00939474822996
+current moving average: 0.921071012963
+('loss:', tensor(-0.0190, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0936, 0.9064]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1410, 0.8590]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:55:30.409472: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.930742961022503
+
+current reward: 0.00967194805951
+current moving average: 0.923005402575
+('loss:', tensor(0.0024, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0893, 0.9107]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1353, 0.8647]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:56:24.185020: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9303922141439324
+
+current reward: 0.00738681156904
+current moving average: 0.924482764889
+('loss:', tensor(0.0018, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0854, 0.9146]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1300, 0.8700]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:57:17.275115: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310435750766026
+
+current reward: 0.0065608101879
+current moving average: 0.925794926926
+('loss:', tensor(0.0015, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0819, 0.9181]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1251, 0.8749]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 13:58:10.959178: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9317992972294691
+
+current reward: 0.00600437030319
+current moving average: 0.926995800987
+('loss:', tensor(0.0013, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0787, 0.9213]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1205, 0.8795]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 13:59:07.217762: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.913278154983963
+
+current reward: -0.013717646003
+current moving average: 0.924252271786
+('loss:', tensor(-0.0302, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0759, 0.9241]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1143, 0.8857]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:00:00.983561: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9312364995289474
+
+current reward: 0.00698422774262
+current moving average: 0.925649117335
+('loss:', tensor(0.0014, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0733, 0.9267]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1086, 0.8914]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:00:54.745012: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305784395458114
+
+current reward: 0.00492932221096
+current moving average: 0.926634981777
+('loss:', tensor(0.0009, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0712, 0.9288]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.1040, 0.8960]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:01:48.438641: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9316447344612848
+
+current reward: 0.00500975268424
+current moving average: 0.927636932314
+('loss:', tensor(0.0009, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0692, 0.9308]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0998, 0.9002]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:02:41.228988: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9307260311602156
+
+current reward: 0.00308909884632
+current moving average: 0.928254752083
+('loss:', tensor(0.0005, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0675, 0.9325]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0961, 0.9039]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_0
+2018-12-21 14:03:33.559257: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8852618640847973
+
+current reward: -0.0429928879984
+current moving average: 0.919656174483
+('loss:', tensor(-0.2166, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0634, 0.9366]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0893, 0.9107]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:04:08.951069: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9302757899617631
+
+current reward: 0.0106196154783
+current moving average: 0.921780097579
+('loss:', tensor(0.0017, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0599, 0.9401]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0834, 0.9166]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:05:02.382437: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9303168599395408
+
+current reward: 0.0085367623604
+current moving average: 0.923487450051
+('loss:', tensor(0.0013, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0567, 0.9433]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0782, 0.9218]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:05:58.545610: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305507462593858
+
+current reward: 0.00706329620816
+current moving average: 0.924900109293
+('loss:', tensor(0.0010, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0540, 0.9460]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0737, 0.9263]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_0
+2018-12-21 14:06:51.035383: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.914237767460265
+
+current reward: -0.0106623418326
+current moving average: 0.922767640926
+('loss:', tensor(-0.0284, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0515, 0.9485]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0689, 0.9311]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:07:43.770094: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.931259163299124
+
+current reward: 0.00849152237279
+current moving average: 0.924465945401
+('loss:', tensor(0.0011, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0493, 0.9507]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0647, 0.9353]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:08:36.375610: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9302718824061138
+
+current reward: 0.00580593700522
+current moving average: 0.925627132802
+('loss:', tensor(0.0007, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0474, 0.9526]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0611, 0.9389]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:09:28.996773: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310086393552139
+
+current reward: 0.00538150655328
+current moving average: 0.926703434113
+('loss:', tensor(0.0006, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0458, 0.9542]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0581, 0.9419]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_1
+2018-12-21 14:10:21.602166: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8984484516183279
+
+current reward: -0.0282549824943
+current moving average: 0.921052437614
+('loss:', tensor(-0.0888, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0433, 0.9567]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0555, 0.9445]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:10:56.970977: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9297101834649272
+
+current reward: 0.00865774585119
+current moving average: 0.922783986784
+('loss:', tensor(0.0009, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0410, 0.9590]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0532, 0.9468]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:11:49.365028: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305625605130827
+
+current reward: 0.00777857372911
+current moving average: 0.92433970153
+('loss:', tensor(0.0008, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0391, 0.9609]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0511, 0.9489]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:12:41.807292: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9307770916556326
+
+current reward: 0.00643739012583
+current moving average: 0.925627179555
+('loss:', tensor(0.0006, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0373, 0.9627]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0492, 0.9508]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:13:34.335103: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9302562487608864
+
+current reward: 0.00462906920592
+current moving average: 0.926552993396
+('loss:', tensor(0.0004, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0358, 0.9642]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0475, 0.9525]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:14:26.808098: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.929082023484936
+
+current reward: 0.00252903008879
+current moving average: 0.927058799414
+('loss:', tensor(0.0002, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0345, 0.9655]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0460, 0.9540]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:15:19.536985: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9306255431969565
+
+current reward: 0.00356674378305
+current moving average: 0.927772148171
+('loss:', tensor(0.0003, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0333, 0.9667]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0447, 0.9553]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:16:11.973013: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310244767164519
+
+current reward: 0.00325232854593
+current moving average: 0.92842261388
+('loss:', tensor(0.0003, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0322, 0.9678]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0435, 0.9565]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:17:04.611772: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9321553607007006
+
+current reward: 0.003732746821
+current moving average: 0.929169163244
+('loss:', tensor(0.0003, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0313, 0.9687]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0424, 0.9576]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:17:57.068904: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9297346900841936
+
+current reward: 0.00056552684029
+current moving average: 0.929282268612
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0305, 0.9695]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0415, 0.9585]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:18:49.778600: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9301432995604328
+
+current reward: 0.000861030948471
+current moving average: 0.929454474802
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0298, 0.9702]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0408, 0.9592]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:19:42.374224: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.930486632134471
+
+current reward: 0.00103215733282
+current moving average: 0.929660906268
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0292, 0.9708]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0401, 0.9599]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:20:34.889817: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.930592907574447
+
+current reward: 0.000932001306228
+current moving average: 0.929847306529
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0287, 0.9713]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0394, 0.9606]], grad_fn=<SoftmaxBackward>))
+resulted_str: 0_1
+2018-12-21 14:21:27.245963: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.8982944782965253
+
+current reward: -0.0315528282329
+current moving average: 0.923536740883
+('loss:', tensor(-0.1133, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0273, 0.9727]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0387, 0.9613]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:22:02.658763: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9307114446591271
+
+current reward: 0.00717470377625
+current moving average: 0.924971681638
+('loss:', tensor(0.0005, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0261, 0.9739]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0380, 0.9620]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:22:55.071003: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310795005155665
+
+current reward: 0.00610781887744
+current moving average: 0.926193245414
+('loss:', tensor(0.0004, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0251, 0.9749]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0374, 0.9626]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:23:47.418409: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9293753892987214
+
+current reward: 0.00318214388511
+current moving average: 0.926829674191
+('loss:', tensor(0.0002, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0241, 0.9759]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0368, 0.9632]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:24:40.034775: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9301940033668318
+
+current reward: 0.0033643291762
+current moving average: 0.927502540026
+('loss:', tensor(0.0002, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0233, 0.9767]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0363, 0.9637]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:25:32.549987: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9302984725462607
+
+current reward: 0.00279593252039
+current moving average: 0.92806172653
+('loss:', tensor(0.0002, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0226, 0.9774]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0359, 0.9641]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:26:25.254562: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9304128987315277
+
+current reward: 0.00235117220158
+current moving average: 0.92853196097
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0220, 0.9780]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0355, 0.9645]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:27:20.606764: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9302897173215956
+
+current reward: 0.00175775635133
+current moving average: 0.928883512241
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0215, 0.9785]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0351, 0.9649]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:28:15.599608: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9302789547088341
+
+current reward: 0.0013954424683
+current moving average: 0.929162600734
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0211, 0.9789]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0348, 0.9652]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:29:10.348792: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9304708801300474
+
+current reward: 0.00130827939585
+current moving average: 0.929424256613
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0207, 0.9793]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0345, 0.9655]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:30:06.813907: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9306653703782086
+
+current reward: 0.00124111376484
+current moving average: 0.929672479366
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0203, 0.9797]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0343, 0.9657]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:31:01.899549: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9303811416281665
+
+current reward: 0.000708662261833
+current moving average: 0.929814211819
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0200, 0.9800]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0340, 0.9660]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:31:55.205171: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9297890826419565
+
+current reward: -2.51291767435e-05
+current moving average: 0.929809185983
+('loss:', tensor(-0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0197, 0.9803]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0338, 0.9662]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:32:47.868279: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9315323769081332
+
+current reward: 0.00172319092478
+current moving average: 0.930153824168
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0194, 0.9806]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0336, 0.9664]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:33:40.541076: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9308069433861955
+
+current reward: 0.000653119217888
+current moving average: 0.930284448012
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0192, 0.9808]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0335, 0.9665]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:34:33.222308: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9296280938095633
+
+current reward: -0.000656354202322
+current moving average: 0.930153177171
+('loss:', tensor(-0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0190, 0.9810]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0333, 0.9667]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:35:26.207942: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310360799255751
+
+current reward: 0.000882902754154
+current moving average: 0.930329757722
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0188, 0.9812]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0332, 0.9668]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:36:20.176508: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305621569286137
+
+current reward: 0.000232399206362
+current moving average: 0.930376237564
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0186, 0.9814]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0331, 0.9669]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:37:14.238790: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305551820681516
+
+current reward: 0.000178944504627
+current moving average: 0.930412026464
+('loss:', tensor(9.3810e-06, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0185, 0.9815]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0329, 0.9671]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:38:08.538021: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9301674354636441
+
+current reward: -0.000244591000806
+current moving average: 0.930363108264
+('loss:', tensor(-0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0184, 0.9816]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0328, 0.9672]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:39:02.352923: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305542164066045
+
+current reward: 0.000191108142316
+current moving average: 0.930401329893
+('loss:', tensor(9.9274e-06, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0183, 0.9817]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0328, 0.9672]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:39:56.212034: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9300141186446317
+
+current reward: -0.00038721124812
+current moving average: 0.930323887643
+('loss:', tensor(-0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0182, 0.9818]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0327, 0.9673]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:40:50.430897: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9310299566105192
+
+current reward: 0.000706068967391
+current moving average: 0.930465101437
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0181, 0.9819]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0326, 0.9674]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:41:43.968302: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.930548701568869
+
+current reward: 8.36001322627e-05
+current moving average: 0.930481821463
+('loss:', tensor(4.2963e-06, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0180, 0.9820]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0325, 0.9675]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:42:37.949200: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9319017745254312
+
+current reward: 0.00141995306237
+current moving average: 0.930765812076
+('loss:', tensor(0.0001, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0179, 0.9821]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0325, 0.9675]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:43:30.658717: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9305114087577881
+
+current reward: -0.000254403317745
+current moving average: 0.930714931412
+('loss:', tensor(-0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0178, 0.9822]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0324, 0.9676]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:44:23.476495: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9309963419553806
+
+current reward: 0.000281410543396
+current moving average: 0.930771213521
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0178, 0.9822]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0324, 0.9676]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+2018-12-21 14:45:16.242824: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+***************
+..(dataset: Val) AUC 0.9314021754436407
+
+current reward: 0.000630961922977
+current moving average: 0.930897405905
+('loss:', tensor(0.0000, grad_fn=<NegBackward>))
+('outputs: ', tensor([[0.0177, 0.9823]], grad_fn=<SoftmaxBackward>))
+('outputs: ', tensor([[0.0323, 0.9677]], grad_fn=<SoftmaxBackward>))
+resulted_str: 1_1
+
