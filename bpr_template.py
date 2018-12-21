@@ -6,10 +6,9 @@ from openrec.utils.samplers import RandomPairwiseSampler
 from openrec.utils.samplers import EvaluationSampler
 import dataloader
 
-#raw_data = dataloader.load_citeulike()
-raw_data = dataloader.load_dataset()
+raw_data = dataloader.load_citeulike()
 dim_embed = CHANGE_DIM_HERE
-total_iter = raw_data["max_iteration"]
+total_iter = 2000
 batch_size = 1000
 eval_iter = total_iter
 save_iter = eval_iter

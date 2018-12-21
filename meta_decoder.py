@@ -24,11 +24,6 @@ class DecoderMLP(nn.Module):
         
         self.dimOutput = nn.Linear(hidden_size, output_size[0])
         self.l2_reg = nn.Linear(hidden_size, output_size[1])
-        self.interaction = nn.Linear(hidden_size, output_size[2])
-        self.eudist_margin = nn.Linear(hidden_size, output_size[3])
-        self.mlp1 = nn.Linear(hidden_size, output_size[4])
-        self.mlp2 = nn.Linear(hidden_size, output_size[5])
-        self.mlp3 = nn.Linear(hidden_size, output_size[6])
 
 
     def forward(self, input):
@@ -36,12 +31,7 @@ class DecoderMLP(nn.Module):
         out = self.relu(self.fc2(out))
         out1 = self.dimOutput(out)
         out2 = self.l2_reg(out)
-        out3 = self.interaction(out)
-        out4 = self.eudist_margin(out)
-        out5 = self.mlp1(out)
-        out6 = self.mlp2(out)
-        out7 = self.mlp3(out)
-        return [out1, out2, out3, out4, out5, out6, out7]
+        return [out1, out2]
 
 
 def train(meta_decoder, decoder_optimizer, scheduler):
@@ -57,8 +47,8 @@ def train(meta_decoder, decoder_optimizer, scheduler):
 
     resulted_str = []
     for each in output:
-        print("outputs: ", each)
         each_softmax = softmax(each)
+        print("outputs: ", each_softmax)
         softmax_outputs_stored.append(each_softmax)
         idx = Categorical(each_softmax).sample()
         resulted_str.append(idx.tolist()[0])
@@ -78,22 +68,12 @@ def train(meta_decoder, decoder_optimizer, scheduler):
     print("current reward: " + str(reward))
     print("current moving average: " + str(moving_average))
 
-
     expectedReward = 0
-    for i in range(3):
+    for i in range(2):
         logprob = torch.log(softmax_outputs_stored[i][0][resulted_idx[i]])
         expectedReward += logprob * reward
 
-    type_of_interaction = resulted_idx[2]
-    if type_of_interaction == 0: # eudist
-        logprob = torch.log(softmax_outputs_stored[3][0][resulted_idx[3]])
-        expectedReward += logprob * reward
-    elif type_of_interaction == 2:
-        for i in range(4,7):
-            logprob = torch.log(softmax_outputs_stored[i][0][resulted_idx[i]])
-            expectedReward += logprob * reward
-
-    loss = - expectedReward   
+    loss = - expectedReward
     print('loss:', loss)
 
     # finally, backpropagate the loss according to the policy
@@ -102,14 +82,14 @@ def train(meta_decoder, decoder_optimizer, scheduler):
     scheduler.step()
 
 def trainIters():
-    num_iters = 200
+    num_iters = 500
   
-    meta_decoder = DecoderMLP(100,[6,5,3,4,6,6,6])
-    step_size = 5
+    meta_decoder = DecoderMLP(100, [2, 2])
+    step_size = 10
     optimizer = optim.Adam(meta_decoder.parameters(), lr=0.001)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size, gamma=0.9, last_epoch=-1)
     for iteration in range(num_iters):
-        train(meta_decoder, optimizer,scheduler)
+        train(meta_decoder, optimizer, scheduler)
 
 
 if __name__ == "__main__":
