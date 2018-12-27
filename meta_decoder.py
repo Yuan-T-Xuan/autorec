@@ -62,6 +62,7 @@ def train(meta_decoder, decoder_optimizer, scheduler):
         softmax_outputs_stored.append(each_softmax)
         idx = Categorical(each_softmax).sample()
         resulted_str.append(idx.tolist()[0])
+    resulted_str[2] = 0
     resulted_idx = resulted_str
     resulted_str = "_".join(map(str, resulted_str))
     print("resulted_str: " + resulted_str)
@@ -105,7 +106,7 @@ def trainIters():
     num_iters = 1000
   
     meta_decoder = DecoderMLP(100, [6,5,3,4,6,6,6])
-    step_size = 10
+    step_size = 20
     optimizer = optim.Adam(meta_decoder.parameters(), lr=0.001)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size, gamma=0.9, last_epoch=-1)
     for iteration in range(num_iters):

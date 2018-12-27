@@ -9,7 +9,7 @@ import dataloader
 #raw_data = dataloader.load_citeulike()
 raw_data = dataloader.load_tradesy()
 dim_embed = CHANGE_DIM_HERE
-total_iter = 5000
+total_iter = 20000
 batch_size = 1000
 eval_iter = total_iter
 save_iter = eval_iter
